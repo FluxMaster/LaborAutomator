@@ -1,0 +1,234 @@
+Breakfast Cook at 6 o'Clock on Monday for 2 hours.
+Nobody to fill this
+
+Breakfast Cook at 6 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Morning Clean at 9 o'Clock on Saturday for 1 hours.
+Nobody to fill this
+
+Brunch Cook at 10 o'Clock on Saturday for 2 hours.
+Nobody to fill this
+
+Brunch Cook at 10 o'Clock on Saturday for 2 hours.
+Nobody to fill this
+
+Brunch Clean at 13 o'Clock on Saturday for 2 hours.
+Nobody to fill this
+
+Brunch Clean at 13 o'Clock on Saturday for 2 hours.
+Nobody to fill this
+
+Cookie Monster at 20 o'Clock on Saturday for 1 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Saturday for 1 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Saturday for 1 hours.
+Nobody to fill this
+
+Breakfast Cook at 6 o'Clock on Friday for 2 hours.
+Pedro
+
+Morning Clean at 8 o'Clock on Monday for 1 hours.
+Valeria
+
+Lunch Cook at 9 o'Clock on Monday for 2 hours.
+Colton
+
+Lunch Cook at 9 o'Clock on Tuesday for 2 hours.
+Colton
+
+Lunch Cook at 9 o'Clock on Tuesday for 2 hours.
+Pedro
+
+Dinner Prep at 14 o'Clock on Tuesday for 2 hours.
+Andy
+
+Dinner Cook at 16 o'Clock on Tuesday for 2 hours.
+Andy
+
+Lunch Cook at 9 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Dinner Prep at 14 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Dinner Cook at 16 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Dinner Prep at 14 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Pot Scrub at 12 o'Clock on Monday for 1 hours.
+Tyler
+
+Lunch Clean at 13 o'Clock on Monday for 1 hours.
+Tyler
+
+Dinner Prep at 14 o'Clock on Monday for 2 hours.
+Davis
+
+Lunch Clean at 13 o'Clock on Tuesday for 1 hours.
+Tyler
+
+Lunch Clean at 13 o'Clock on Tuesday for 1 hours.
+Nobody to fill this
+
+Pot Scrub at 12 o'Clock on Wednesday for 1 hours.
+Daniela
+
+Lunch Cook at 9 o'Clock on Thursday for 2 hours.
+Nobody to fill this
+
+Lunch Cook at 9 o'Clock on Thursday for 2 hours.
+Nobody to fill this
+
+Lunch Clean at 13 o'Clock on Thursday for 1 hours.
+Daniela
+
+Lunch Clean at 13 o'Clock on Thursday for 1 hours.
+Tyler
+
+Dinner Prep at 14 o'Clock on Thursday for 2 hours.
+Daniela
+
+Dinner Cook at 16 o'Clock on Thursday for 2 hours.
+Nobody to fill this
+
+Lunch Cook at 9 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Pot Scrub at 12 o'Clock on Friday for 1 hours.
+Nobody to fill this
+
+Lunch Clean at 13 o'Clock on Friday for 1 hours.
+Nobody to fill this
+
+Dinner Cook at 16 o'Clock on Monday for 2 hours.
+Davis
+
+Salad Alice at 17 o'Clock on Tuesday for 1 hours.
+Valeria
+
+Morning Clean at 8 o'Clock on Wednesday for 1 hours.
+Valeria
+
+Lunch Clean at 13 o'Clock on Wednesday for 1 hours.
+Nobody to fill this
+
+Dish Machine at 17 o'Clock on Wednesday for 1 hours.
+Valeria
+
+Salad Alice at 17 o'Clock on Thursday for 1 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Thursday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Thursday for 2 hours.
+Nobody to fill this
+
+Dinner Cook at 16 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Fridge Clean at 20 o'Clock on Friday for 1 hours.
+Nobody to fill this
+
+Morning Clean at 9 o'Clock on Sunday for 1 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Sunday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Sunday for 2 hours.
+Nobody to fill this
+
+Morning Clean at 8 o'Clock on Tuesday for 1 hours.
+Nobody to fill this
+
+Morning Clean at 8 o'Clock on Thursday for 1 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Thursday for 1 hours.
+Alejandra
+
+Morning Clean at 8 o'Clock on Friday for 1 hours.
+Alejandra
+
+Dish Machine at 17 o'Clock on Friday for 1 hours.
+Nobody to fill this
+
+Head Dinner Clean at 18 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Friday for 2 hours.
+Nobody to fill this
+
+Dinner Cook at 16 o'Clock on Sunday for 2 hours.
+Nobody to fill this
+
+Salad Alice at 17 o'Clock on Sunday for 1 hours.
+Nobody to fill this
+
+Cookie Monster at 20 o'Clock on Sunday for 1 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Sunday for 1 hours.
+Alejandra
+
+Dish Machine at 17 o'Clock on Monday for 1 hours.
+Nobody to fill this
+
+Head Dinner Clean at 18 o'Clock on Monday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Monday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Monday for 2 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Monday for 1 hours.
+Alejandra
+
+Dinner Clean at 18 o'Clock on Tuesday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Tuesday for 2 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Tuesday for 1 hours.
+Nobody to fill this
+
+Midnight Alice at 22 o'Clock on Wednesday for 1 hours.
+Nobody to fill this
+
+Cookie Monster at 20 o'Clock on Thursday for 1 hours.
+Nobody to fill this
+
+Dinner Prep at 14 o'Clock on Sunday for 2 hours.
+Nobody to fill this
+
+Fridge Clean at 20 o'Clock on Monday for 1 hours.
+Nobody to fill this
+
+Cookie Monster at 20 o'Clock on Tuesday for 1 hours.
+Nobody to fill this
+
+Head Dinner Clean at 18 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Dinner Clean at 18 o'Clock on Wednesday for 2 hours.
+Nobody to fill this
+
+Fridge Clean at 20 o'Clock on Wednesday for 1 hours.
+Nobody to fill this
+

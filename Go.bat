@@ -1,0 +1,1 @@
+java -cp . Laborer > output.txt
