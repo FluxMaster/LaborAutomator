@@ -8,11 +8,16 @@ import java.io.*;
 
 public class Job implements Comparable<Job>
 {
+	private static int count;
+	
+	
 	private String name;
 	private int time;
 	private int day;
 	private int length;
 	private ArrayList people;
+	private int ID;
+	private Person doer;
 	
 	//It's important to note that time slots are not
 	//referenced by time buy by numbers 0 - 16
@@ -25,6 +30,7 @@ public class Job implements Comparable<Job>
 		this.time = time;
 		this.day = day;
 		this.length = length;
+		this.ID = ++count;
 		people = new ArrayList(0);
 	}
 	
@@ -42,7 +48,7 @@ public class Job implements Comparable<Job>
 	//toString
 	public String toString()
 	{
-		return getName() + " at " + (6 +(getTime())) + " o'Clock on " + dayParser(getDay()) + " for " + getLength() + " hours."; 
+		return getID() + ": " + getName() + " at " + (6 +(getTime())) + " o'Clock on " + dayParser(getDay()) + " for " + getLength() + " hours."; 
 	}
 	
 	@Override public int compareTo(Job jother) 
@@ -50,6 +56,10 @@ public class Job implements Comparable<Job>
 		return new Integer(this.getSize()).compareTo(new Integer(jother.getSize()));
 	}
 	
+	public void setDoer(Person p)
+	{
+		this.doer = p;
+	}
 	
 	//Getters
 	public String getName()
@@ -81,6 +91,17 @@ public class Job implements Comparable<Job>
 	{
 		return (Person)this.people.get(i);
 	}
+	
+	public int getID()
+	{
+		return this.ID;
+	}
+	
+	public Person getDoer()
+	{
+		return this.doer;
+	}
+	
 	
 	public boolean equals(Job j)
 	{

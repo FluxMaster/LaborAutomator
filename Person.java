@@ -84,6 +84,11 @@ public class Person implements Comparable<Person>
 		return jobsList;
 	}
 	
+	public String toString()
+	{
+		return getName() + " " + getRoom();
+	}
+	
 	@Override public int compareTo(Person pother) 
 	{
 		return new Integer(this.getAvail()).compareTo(new Integer(pother.getAvail()));

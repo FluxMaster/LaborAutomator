@@ -1,0 +1,21 @@
+Name:,Sally,,,,,,
+Room:,507,,,,,,
+,,,,,,,
+Schedule,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+6-7AM,sleep,sleep,sleep,sleep,sleep,sleep,sleep
+7-8AM,sleep,sleep,class,sleep,class,sleep,sleep
+8-9AM,sleep,,class,,class,,sleep
+9-10AM,,,,,,,
+10-11AM,study group,class,class,class,class,class,
+11AM-12PM,study group,class,class,class,class,class,
+12-1PM,study group,,class,,class,SO,
+1-2PM,study group,lab,class,,class,SO,study group
+2-3PM,,lab,class,,class,SO,study group
+3-4PM,,,,,,SO,study group
+4-5PM,,lab,,,,SO,study group
+5-6PM,,lab,,,,,
+6-7PM,,lab,,,,,
+7-8PM,,lab,,,,,
+8-9PM,,lab,,,,,
+9-10PM,,,,,,,
+10-11PM,,,,,,,
