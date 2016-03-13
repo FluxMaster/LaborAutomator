@@ -170,11 +170,29 @@ public class Job implements Comparable<Job>
 	}
 }
 
-class JobSorter implements Comparator<Job>
+class JobSizeSorter implements Comparator<Job>
 {
 	public int compare(Job j1, Job j2)
 	{
 		return new Integer(j1.getSize()).compareTo(new Integer(j2.getSize()));
 	}
 }
-	
+
+class JobIDSorter implements Comparator<Job>
+{
+	public int compare(Job j1, Job j2)
+	{
+		return new Integer(j1.getID()).compareTo(new Integer(j2.getID()));
+	}
+}
+
+class JobTimeSorter implements Comparator<Job>
+{
+	public int compare(Job j1, Job j2)
+	{
+		if(new Integer(j1.getDay()).compareTo(new Integer(j2.getDay())) != 0)
+			return new Integer(j1.getDay()).compareTo(new Integer(j2.getDay()));
+		else
+			return new Integer(j1.getTime()).compareTo(new Integer(j2.getTime()));
+	}
+}

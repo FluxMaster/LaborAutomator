@@ -55,7 +55,7 @@ public class Laborer{
 			sc.nextLine();
 			sc.next();
 			String room = sc.next();
-			System.out.println(name + " " + room);
+			//System.out.println(name + " " + room);
 			
 			//Begin Loop
 			sc.nextLine();
@@ -159,7 +159,7 @@ public class Laborer{
 			//System.out.println();
 			//End Loop
 			
-			
+			/*
 			System.out.println();
 			for(int g = 0; g < 17; g++)
 			{
@@ -170,7 +170,7 @@ public class Laborer{
 				System.out.println();
 			}
 			System.out.println();
-			
+			*/
 			
 			//Form Schedule Object
 			Schedule finalSched = 
@@ -242,10 +242,12 @@ public class Laborer{
 		}
 		*/
 		
-		
-		
-		
-		
+		//Hard Coded Stuff Build Parser for this instead later
+		/*
+		((Person)members.get("Olivia505")).addHours(2);
+		((Person)members.get("Callie404")).addHours(2);
+		((Person)members.get("Taylor210")).addHours(2);
+		*/
 		
 		//Begin Loop through Jobs
 		Job lastJob = new Job("",0,0,0);
@@ -309,19 +311,20 @@ public class Laborer{
 		List<Person> peopleByAvail = new ArrayList<Person>(members.values());
 		Collections.sort(peopleByAvail);
 		
+		/*
 		System.out.println("People by Availability");
 		for(int i = 0; i < peopleByAvail.size(); i++)
 		{
 			System.out.println(peopleByAvail.get(i) + ": " + (peopleByAvail.get(i)).getAvail());
 		}
-		
+		*/
 		
 		System.out.println("Flex Laborers");
 		
 		int w = 0;
 		while(HOURSFLEX > 3)
 		{
-			System.out.println(peopleByAvail.get(w).getName());
+			//System.out.println(peopleByAvail.get(w).getName());
 			((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4));
 			((Person)(peopleByAvail.get(w))).addHours(4);
 			HOURSFLEX-=4;
@@ -329,19 +332,13 @@ public class Laborer{
 			w++;
 		}
 		
-		//Hard Coded Stuff Build Parser for this instead later
-		/*
-		((Person)members.get("Olivia505")).addHours(2);
-		((Person)members.get("Callie404")).addHours(2);
-		((Person)members.get("Taylor210")).addHours(2);
-		*/
-		
 		System.out.println("You have " + HOURSFLEX + " hours left of Flex Labor");
 		
 		//Sort "Sorter" by number of people
-		Collections.sort(jobList);
 		
+		Collections.sort(jobList,new JobSizeSorter());
 		
+		/*
 		System.out.println("PostSort");
 		for(int i = 0; i < jobList.size(); i++)
 		{
@@ -352,6 +349,7 @@ public class Laborer{
 			}
 			System.out.println();
 		}
+		*/
 		
 		for(int i = 0; i<jobList.size(); i++)
 		{
@@ -403,7 +401,10 @@ public class Laborer{
 		}
 		//End Loop
 		
-		System.out.println("Jobs by Job Order");
+		
+		Collections.sort(jobList,new JobTimeSorter());
+		
+		System.out.println("Jobs by Time");
 		for(int i = 0; i < jobList.size(); i++)
 		{
 			System.out.print((((Job)jobList.get(i))) + " ");
