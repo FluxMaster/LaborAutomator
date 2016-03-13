@@ -1,4 +1,4 @@
-Lainy McGee 220,Lunch Cook,4,3,2
+#person,name,day,time,lengthLainy McGee 220,Lunch Cook,4,3,2
 Crystal Wong C304,Lunch Cook,4,3,2
 Brit'ne 303,Lunch Cook,4,3,2
 GRIALOU IRENE 416;,Lunch Cook,2,3,2
@@ -10,10 +10,10 @@ Daniel Kane 314,Lunch Cook,1,3,2
 GRIALOU IRENE 416;,Lunch Cook,3,3,2
 Aliyah 216,Lunch Cook,3,3,2
 Daniel Kane 314,Lunch Cook,3,3,2
-Jennifer 223,Dinner Prep,3,8,2
 Andrew Ayma 211,Dinner Prep,3,8,2
+Jennifer 223,Dinner Prep,3,8,2
 Olivia 505,Dinner Prep,1,8,2
-Jennifer 223,Dinner Prep,1,8,2
+Andrew Ayma 211,Dinner Prep,1,8,2
 Vanesse ,Dinner Prep,2,8,2
 Kyle 413,Dinner Prep,2,8,2
 Andrew Piotrowski 503,Morning Clean,3,2,1
@@ -24,25 +24,25 @@ Kyle 413,Dinner Prep,4,8,2
 Andrew Piotrowski 503,Morning Clean,5,2,1
 Jerome 509,Morning Clean,5,2,1
 Andrew Piotrowski 503,Morning Clean,1,2,1
-David Socol 510,Morning Clean,1,2,1
+Jennifer 223,Morning Clean,1,2,1
 Andrew Piotrowski 503,Morning Clean,4,2,1
 Vanesse ,Morning Clean,4,2,1
 Vanesse ,Pot Scrub,2,6,1
 Annie Ye 309,Lunch Clean,2,7,1
-Andrew Ayma 211,Lunch Clean,2,7,1
+Josh 206,Lunch Clean,2,7,1
 Monica 202,Lunch Clean,4,7,1
 Annie Ye 309,Lunch Clean,4,7,1
-Andrew Ayma 211,Morning Clean,2,2,1
 Gavin 104,Morning Clean,2,2,1
+Ryan 517,Morning Clean,2,2,1
 Jerome 509,Lunch Cook,5,3,2
 Evert Keller 514,Lunch Cook,5,3,2
 Gavin 104,Lunch Cook,5,3,2
 Monica 202,Pot Scrub,5,6,1
-Olivia 505,Lunch Clean,5,7,1
 Tyler 512,Lunch Clean,5,7,1
+Patricio 513,Lunch Clean,5,7,1
 Drew 104,Dinner Prep,5,8,2
 David Socol 510,Dinner Prep,5,8,2
-Olivia 505,Pot Scrub,1,6,1
+Brian Richer 306,Pot Scrub,1,6,1
 Tyler 512,Lunch Clean,1,7,1
 Rishi 317,Lunch Clean,1,7,1
 Daniela 207,Pot Scrub,3,6,1
@@ -52,81 +52,81 @@ Drew 104,Dinner Cook,3,10,2
 valerie 304,Dinner Cook,3,10,2
 valerie 304,Dinner Cook,1,10,2
 Tyler 512,Dinner Cook,1,10,2
-Kiara McGee 408,Morning Clean,6,3,1
 Kristyn 215,Morning Clean,6,3,1
-Kiara McGee 408,Morning Clean,0,3,1
+Aliyah 216,Morning Clean,6,3,1
 Kristyn 215,Morning Clean,0,3,1
+Aliyah 216,Morning Clean,0,3,1
 Kristyn 215,Dinner Cook,2,10,2
 Ryan 517,Dinner Cook,2,10,2
-Callie 404,Dinner Cook,4,10,2
-Ryan 517,Dinner Cook,4,10,2
+Josh 206,Dinner Cook,4,10,2
+mia trautz 517,Dinner Cook,4,10,2
 Cristina 406,Midnight Alice,5,16,1
 Evert Keller 514,Midnight Alice,5,16,1
 Callie 404,Dinner Clean,4,12,2
-Aliyah 216,Dinner Clean,4,12,2
 Brian Richer 306,Dinner Clean,4,12,2
-Josh 206,Dinner Clean,4,12,2
 mia trautz 517,Dinner Clean,4,12,2
-Cristina 406,Fridge Clean,5,15,1
-Kiara McGee 408,Brunch Cook,6,4,2
+Alex Penn 110,Dinner Clean,4,12,2
+Anthony Stannard 415,Dinner Clean,4,12,2
+Pedro 411,Fridge Clean,5,15,1
 Dylan 109,Brunch Cook,6,4,2
-Brian Richer 306,Dinner Clean,2,12,2
-Josh 206,Dinner Clean,2,12,2
-mia trautz 517,Dinner Clean,2,12,2
+David Socol 510,Brunch Cook,6,4,2
 Alex Penn 110,Dinner Clean,2,12,2
+Anthony Stannard 415,Dinner Clean,2,12,2
 Taylor 210,Dinner Clean,2,12,2
+Christina 204,Dinner Clean,2,12,2
+Andrew Hu  511,Dinner Clean,2,12,2
 Alex 112,Dinner Clean,1,12,2
-Alex Penn 110,Dinner Clean,1,12,2
-Taylor 210,Dinner Clean,1,12,2
-Anthony Stannard 415,Dinner Clean,1,12,2
 Christina 204,Dinner Clean,1,12,2
+Josh 308,Dinner Clean,1,12,2
+Darcy 506,Dinner Clean,1,12,2
+Mason 105,Dinner Clean,1,12,2
 Jerome 509,Dishes and Salads,4,11,1
-Cristina 406,Fridge Clean,4,15,1
+Pedro 411,Fridge Clean,4,15,1
 Cristina 406,Midnight Alice,4,16,1
 Dylan 109,Midnight Alice,4,16,1
-Alex 112,Dinner Clean,5,12,2
 Patricio 513,Dinner Clean,5,12,2
+Alex 112,Dinner Clean,5,12,2
 David 217,Dinner Clean,5,12,2
-Anthony Stannard 415,Dinner Clean,5,12,2
 Andrew Hu  511,Dinner Clean,5,12,2
-Patricio 513,Brunch Clean,6,7,2
+Josh 308,Dinner Clean,5,12,2
+Pedro 411,Brunch Clean,6,7,2
 Rishi 317,Brunch Clean,6,7,2
 Marco Alanis 2,Brunch Clean,6,7,2
 David 217,Brunch Clean,6,7,2
-Evert Keller 514,Fridge Clean,6,15,1
-David Socol 510,Midnight Alice,6,16,1
-Gavin 104,Midnight Alice,6,16,1
-Rishi 317,Midnight Alice,6,16,1
-Marco Alanis 2,Dishes and Salads,1,11,1
-Andrew Hu  511,Dinner Cook,5,10,2
-Christina 204,Dinner Cook,5,10,2
-Marco Alanis 2,Midnight Alice,0,16,1
-Darcy 506,Midnight Alice,0,16,1
-Josh 308,Dishes and Salads,3,11,1
-Josh 308,Dinner Cook,0,10,2
+Cristina 406,Fridge Clean,6,15,1
+Cristina 406,Midnight Alice,6,16,1
+Evert Keller 514,Midnight Alice,6,16,1
+Jennifer 223,Midnight Alice,6,16,1
+Brian Richer 306,Dishes and Salads,1,11,1
+Marco Alanis 2,Dinner Cook,5,10,2
+Darcy 506,Dinner Cook,5,10,2
+Gavin 104,Midnight Alice,0,16,1
+Ryan 517,Midnight Alice,0,16,1
+Josh 206,Dishes and Salads,3,11,1
 Mason 105,Dinner Cook,0,10,2
-Josh 308,Fridge Clean,0,15,1
-Mason 105,Dishes and Salads,2,11,1
-Darcy 506,Dinner Clean,3,12,2
+Sally 507,Dinner Cook,0,10,2
+Patricio 513,Fridge Clean,0,15,1
+Rishi 317,Dishes and Salads,2,11,1
 Sally 507,Dinner Clean,3,12,2
 Nhut 316,Dinner Clean,3,12,2
 Heriberto Quintanilla 513,Dinner Clean,3,12,2
 Aaron 504,Dinner Clean,3,12,2
-Sally 507,Dishes and Salads,0,11,1
-Nhut 316,Dinner Clean,0,12,2
+Ryan 307,Dinner Clean,3,12,2
+Nhut 316,Dishes and Salads,0,11,1
 Heriberto Quintanilla 513,Dinner Clean,0,12,2
 Aaron 504,Dinner Clean,0,12,2
 Crystal Wong C304,Dinner Clean,0,12,2
+Ryan 307,Dinner Clean,0,12,2
 Brit'ne 303,Dinner Clean,0,12,2
-Darcy 506,Midnight Alice,2,16,1
-Mason 105,Midnight Alice,2,16,1
-Sally 507,Fridge Clean,3,15,1
-Ryan 307,Midnight Alice,3,16,1
+Nhut 316,Midnight Alice,2,16,1
+Josh 323,Midnight Alice,2,16,1
+Josh 323,Fridge Clean,3,15,1
 Josh 323,Midnight Alice,3,16,1
-Ryan 307,Dishes and Salads,5,11,1
-Ryan 307,Midnight Alice,1,16,1
-Josh 323,Midnight Alice,1,16,1
-Ryan 307,Fridge Clean,2,15,1
-Josh 323,Dinner Prep,0,8,2
-Thalia Bp 208,Dinner Prep,0,8,2
+Thalia Bp 208,Midnight Alice,3,16,1
+Josh 323,Dishes and Salads,5,11,1
+Thalia Bp 208,Midnight Alice,1,16,1
+Jacqueline 201,Midnight Alice,1,16,1
+Thalia Bp 208,Fridge Clean,2,15,1
+Jacqueline 201,Dinner Prep,0,8,2
+SAURABH TANDON 324,Dinner Prep,0,8,2
 Thalia Bp 208,Fridge Clean,1,15,1

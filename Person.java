@@ -63,6 +63,7 @@ public class Person implements Comparable<Person>
 	public void addJob(Job j)
 	{
 		jobsList.add(j);
+		addHours(j.getLength());
 	}
 	
 	public boolean hasJob(Job j)
@@ -102,4 +103,3 @@ class PeopleSorter implements Comparator<Person>
 		return new Integer(p1.getAvail()).compareTo(new Integer(p2.getAvail()));
 	}
 }
-	

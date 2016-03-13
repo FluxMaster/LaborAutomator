@@ -67,42 +67,6 @@ public class Laborer{
 			{
 				week[q] = new Day();
 			}
-			
-			/******rewrite using string splitting******
-			try
-			{
-				for(int k = 0; k < 17; k++)
-				{
-					String temp = sc.nextLine();
-					String[] strarr = temp.split(",");
-					System.out.print("strarr length: " + strarr.length + " ");
-					for(int q = 0; q < strarr.length; q++)
-					{
-						System.out.println(strarr[q]);
-					}
-					
-					
-					for(int j = 1; j < 8; j++)
-					{
-						//Parse Days and Form Objects
-						if(strarr[j] == "")
-						{
-							(week[j-1]).setBlock(k,1);
-							//System.out.print(1);
-						}
-						else
-						{
-							(week[j-1]).setBlock(k,0);
-							//System.out.print(temp);
-						}
-						System.out.print(j + ": " + strarr[j] + " ");
-					}
-					System.out.println();
-				}
-			}
-			******rewrite using string splitting******/
-			
-			/******rewrite using string splitting******/
 			try
 			{
 				for(int k = 0; k < 17; k++)
@@ -137,7 +101,6 @@ public class Laborer{
 				}
 				
 			}
-			/******rewrite using string splitting******/
 			catch(NoSuchElementException e)
 			{
 				System.out.println("Error in input from:");
@@ -181,11 +144,7 @@ public class Laborer{
 			Person finalPerson = new Person(name,room,finalSched);
 			//Put it in the Hash
 			//System.out.println("Putting " + finalPerson.getName() + " in the hash");
-			members.put((String)(finalPerson.getName() + finalPerson.getRoom()),finalPerson);
-			
-			
-			
-			
+			members.put((String)(finalPerson.getName() +" "+ finalPerson.getRoom()),finalPerson);
 		}
 		//End Loop	
 	
@@ -202,7 +161,7 @@ public class Laborer{
 	
 	
 		//Then we need to populate the "Sorter" structure
-		File jobs = new File("./Jobs.csv");
+		File jobs = new File("Jobs.csv");		
 		//Parse Jobs
 		Scanner jl = new Scanner (jobs);
 		//jl.nextLine();
@@ -227,28 +186,55 @@ public class Laborer{
 				}
 			}
 		}
-		
-		//TODO: Parse JOBS that are appointed, including officer positions
-		
-		/*Put the jobs in the Job List
-		while(jl.hasNext())
+		try
 		{
-			Job temp = new Job(jl.next(),
-								jl.nextInt(),
-								jl.nextInt(),
-								jl.nextInt());
-			jl.nextLine();
-			jobList.add(temp);
+			Scanner aj = new Scanner(new File("AssignedJobs.csv"));
+			System.out.println("Got that file");
+			try
+			{	
+				//Scan assigned job list "#person,name,day,time,length"
+				System.out.println("Assigned Jobs");
+				if(aj.hasNextLine())
+				{
+					System.out.println("HasNextLine");
+				}
+				System.out.println("StartLoop");
+				while(aj.hasNextLine())
+				{
+					System.out.println("InsideLoop");
+					String jobline = aj.nextLine();
+					String[] splitter = (jobline).split(",");
+					if(!(splitter[0].charAt(0) == '#'))
+					{
+						Job temp = new Job(splitter[1],
+										Integer.parseInt(splitter[2]),
+										Integer.parseInt(splitter[3]),
+										Integer.parseInt(splitter[4]));
+						((Person)members.get(splitter[0])).addJob(temp);
+						System.out.println(temp + " " + splitter[0]);
+					}
+					
+				}
+				System.out.println("EndLoop");
+				
+				//Hard Coded Stuff Build Parser for this instead later
+				/*
+				((Person)members.get("Olivia505")).addHours(2);
+				((Person)members.get("Callie404")).addHours(2);
+				((Person)members.get("Taylor210")).addHours(2);
+				*/
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+				System.out.println("Something is probably wrong with your AssignedJobs.csv");
+			}
 		}
-		*/
-		
-		//Hard Coded Stuff Build Parser for this instead later
-		/*
-		((Person)members.get("Olivia505")).addHours(2);
-		((Person)members.get("Callie404")).addHours(2);
-		((Person)members.get("Taylor210")).addHours(2);
-		*/
-		
+		catch(Exception e)
+		{
+			//System.out.println(e.toString());
+			System.out.println("No Assigned Jobs");
+		}
 		//By sorting the job list by time, users can order the jobs
 		//in Jobs.csv arbitrarily, but my lazy hack for preventing
 		//counting the same job multiple times will still work
@@ -287,9 +273,9 @@ public class Laborer{
 		}
 		//End Loops
 		
-		// Debug
+		/* Debug
 		
-		/*
+		
 		System.out.println("PreSort");
 		for(int i = 0; i < jobList.size(); i++)
 		{
@@ -300,18 +286,17 @@ public class Laborer{
 			}
 			System.out.println();
 		}
-		*/
 		
 		
-		/*
+		
+		
 		Iterator<Map.Entry<String, Person>> debugIterator = members.entrySet().iterator() ;
 		while(debugIterator.hasNext()){
 			Map.Entry<String, Person> studentEntry = debugIterator.next();
 			System.out.println(studentEntry.getKey() +" :: "+ studentEntry.getValue());
 		}
-		*/
 		
-		
+		Debug */
 	
 		List<Person> peopleByAvail = new ArrayList<Person>(members.values());
 		Collections.sort(peopleByAvail);
@@ -324,21 +309,27 @@ public class Laborer{
 		}
 		*/
 		
-		System.out.println("Flex Laborers");
-		
-		int w = 0;
-		while(HOURSFLEX > 3)
+		if(HOURSFLEX>0)
 		{
-			//System.out.println(peopleByAvail.get(w).getName());
-			((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4));
-			((Person)(peopleByAvail.get(w))).addHours(4);
-			HOURSFLEX-=4;
-			System.out.println(((Person)peopleByAvail.get(w)) + " has 4 hours of Flex Labor");
-			w++;
+			System.out.println("Flex Laborers");
+			
+			int w = 0;
+			while(HOURSFLEX > 3)
+			{
+				//System.out.println(peopleByAvail.get(w).getName());
+				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4));
+				//((Person)(peopleByAvail.get(w))).addHours(4);
+				HOURSFLEX-=4;
+				System.out.println(((Person)peopleByAvail.get(w)) + " has 4 hours of Flex Labor");
+				w++;
+			}
+			
+			System.out.println("You have " + HOURSFLEX + " hours left of Flex Labor");	
 		}
-		
-		System.out.println("You have " + HOURSFLEX + " hours left of Flex Labor");
-		
+		else
+		{
+			System.out.println("No Flex Laborers");
+		}
 		//Sort "Sorter" by number of people
 		
 		Collections.sort(jobList,new JobSizeSorter());
@@ -378,7 +369,7 @@ public class Laborer{
 		//Create Labor Schedule Structure??
 		
 	    FileWriter fw = new FileWriter("ScheduleData.csv");
-		
+		fw.write("#person,name,day,time,length");
 		
 		//Go through each job
 		for(int i = 0; i < jobList.size(); i++)
@@ -395,7 +386,7 @@ public class Laborer{
 					{
 						//write labor schedule to file with a >> command
 						//System.out.println(((Job)jobList.get(i)).getPerson(j).getName() + " " + ((Job)jobList.get(i)).getPerson(j).getRoom()+ "\n");
-						((Job)jobList.get(i)).getPerson(j).addHours(((Job)jobList.get(i)).getLength());
+						//((Job)jobList.get(i)).getPerson(j).addHours(((Job)jobList.get(i)).getLength());
 						((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
 						((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
 						fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
