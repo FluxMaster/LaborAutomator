@@ -194,14 +194,9 @@ public class Laborer{
 			{	
 				//Scan assigned job list "#person,name,day,time,length"
 				System.out.println("Assigned Jobs");
-				if(aj.hasNextLine())
-				{
-					System.out.println("HasNextLine");
-				}
-				System.out.println("StartLoop");
+				//System.out.println("StartLoop");
 				while(aj.hasNextLine())
 				{
-					System.out.println("InsideLoop");
 					String jobline = aj.nextLine();
 					String[] splitter = (jobline).split(",");
 					if(!(splitter[0].charAt(0) == '#'))
@@ -215,7 +210,6 @@ public class Laborer{
 					}
 					
 				}
-				System.out.println("EndLoop");
 				
 				//Hard Coded Stuff Build Parser for this instead later
 				/*
