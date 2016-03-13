@@ -19,7 +19,7 @@ public class Laborer{
 		int NUMBEROFHOURS = 4;
 		
 		//We need to input files and create the data structure
-		File sf = new File("./Schedules");
+		File sf = new File("Schedules");
 		File[] Scheds = sf.listFiles();
 		
 		
@@ -161,7 +161,7 @@ public class Laborer{
 	
 	
 		//Then we need to populate the "Sorter" structure
-		File jobs = new File("Jobs.csv");		
+		File jobs = new File("Jobs/Jobs.csv");		
 		//Parse Jobs
 		Scanner jl = new Scanner (jobs);
 		//jl.nextLine();
@@ -188,8 +188,7 @@ public class Laborer{
 		}
 		try
 		{
-			Scanner aj = new Scanner(new File("AssignedJobs.csv"));
-			System.out.println("Got that file");
+			Scanner aj = new Scanner(new File("Jobs/AssignedJobs.csv"));
 			try
 			{	
 				//Scan assigned job list "#person,name,day,time,length"

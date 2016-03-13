@@ -1,14 +1,7 @@
-Got that file
 Assigned Jobs
-HasNextLine
-StartLoop
-InsideLoop
 133: Bread Buyer at 16 o'Clock on Monday for 2 hours. Olivia 505
-InsideLoop
 134: Bread Buyer at 16 o'Clock on Thursday for 2 hours. Callie 404
-InsideLoop
 135: Social Coordinator at 6 o'Clock on Sunday for 2 hours. Taylor 210
-EndLoop
 Flex Laborers
 Kyle 213 has 4 hours of Flex Labor
 Jennifer 322 has 4 hours of Flex Labor
