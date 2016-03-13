@@ -249,6 +249,11 @@ public class Laborer{
 		((Person)members.get("Taylor210")).addHours(2);
 		*/
 		
+		//By sorting the job list by time, users can order the jobs
+		//in Jobs.csv arbitrarily, but my lazy hack for preventing
+		//counting the same job multiple times will still work
+		Collections.sort(jobList, new JobTimeSorter());
+		
 		//Begin Loop through Jobs
 		Job lastJob = new Job("",0,0,0);
 		for(int i = 0; i < jobList.size(); i++)
