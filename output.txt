@@ -11,22 +11,22 @@ Pedro 411 has 4 hours of Flex Labor
 Dana 407 has 4 hours of Flex Labor
 Davis 222 has 4 hours of Flex Labor
 You have 1 hours left of Flex Labor
-Jobs by Job Order
+Jobs by Time
 118: Morning Clean at 9 o'Clock on Sunday for 1 hours. Kiara McGee 408
 119: Morning Clean at 9 o'Clock on Sunday for 1 hours. Kristyn 215
-120: Dinner Prep at 14 o'Clock on Sunday for 2 hours. Thalia Bp 208
-121: Dinner Prep at 14 o'Clock on Sunday for 2 hours. Jacqueline 201
-122: Dinner Cook at 16 o'Clock on Sunday for 2 hours. Sally 507
-123: Dinner Cook at 16 o'Clock on Sunday for 2 hours. Nhut 316
-124: Dishes and Salads at 17 o'Clock on Sunday for 1 hours. Mason 105
-125: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Heriberto Quintanilla 513
-126: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Aaron 504
-127: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Crystal Wong C304
-128: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Brit'ne 303
-129: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Ryan 307
+120: Dinner Prep at 14 o'Clock on Sunday for 2 hours. Josh 323
+121: Dinner Prep at 14 o'Clock on Sunday for 2 hours. Thalia Bp 208
+122: Dinner Cook at 16 o'Clock on Sunday for 2 hours. Josh 308
+123: Dinner Cook at 16 o'Clock on Sunday for 2 hours. Mason 105
+124: Dishes and Salads at 17 o'Clock on Sunday for 1 hours. Sally 507
+125: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Nhut 316
+126: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Heriberto Quintanilla 513
+127: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Aaron 504
+128: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Crystal Wong C304
+129: Dinner Clean at 18 o'Clock on Sunday for 2 hours. Brit'ne 303
 130: Fridge Clean at 21 o'Clock on Sunday for 1 hours. Josh 308
-131: Midnight Alice at 22 o'Clock on Sunday for 1 hours. Darcy 506
-132: Midnight Alice at 22 o'Clock on Sunday for 1 hours. Mason 105
+131: Midnight Alice at 22 o'Clock on Sunday for 1 hours. Marco Alanis 2
+132: Midnight Alice at 22 o'Clock on Sunday for 1 hours. Darcy 506
 1: Morning Clean at 8 o'Clock on Monday for 1 hours. Andrew Piotrowski 503
 2: Morning Clean at 8 o'Clock on Monday for 1 hours. David Socol 510
 3: Lunch Cook at 9 o'Clock on Monday for 2 hours. Monica 202
@@ -45,7 +45,7 @@ Jobs by Job Order
 16: Dinner Clean at 18 o'Clock on Monday for 2 hours. Taylor 210
 17: Dinner Clean at 18 o'Clock on Monday for 2 hours. Anthony Stannard 415
 18: Dinner Clean at 18 o'Clock on Monday for 2 hours. Christina 204
-19: Fridge Clean at 21 o'Clock on Monday for 1 hours. Josh 323
+19: Fridge Clean at 21 o'Clock on Monday for 1 hours. Thalia Bp 208
 20: Midnight Alice at 22 o'Clock on Monday for 1 hours. Ryan 307
 21: Midnight Alice at 22 o'Clock on Monday for 1 hours. Josh 323
 22: Morning Clean at 8 o'Clock on Tuesday for 1 hours. Andrew Ayma 211
@@ -60,15 +60,15 @@ Jobs by Job Order
 31: Dinner Prep at 14 o'Clock on Tuesday for 2 hours. Kyle 413
 32: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. Kristyn 215
 33: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. Ryan 517
-34: Dishes and Salads at 17 o'Clock on Tuesday for 1 hours. Josh 308
+34: Dishes and Salads at 17 o'Clock on Tuesday for 1 hours. Mason 105
 35: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. Brian Richer 306
 36: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. Josh 206
 37: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. mia trautz 517
 38: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. Alex Penn 110
 39: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. Taylor 210
-40: Fridge Clean at 21 o'Clock on Tuesday for 1 hours. Josh 323
+40: Fridge Clean at 21 o'Clock on Tuesday for 1 hours. Ryan 307
 41: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. Darcy 506
-42: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. Heriberto Quintanilla 513
+42: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. Mason 105
 43: Morning Clean at 8 o'Clock on Wednesday for 1 hours. Andrew Piotrowski 503
 44: Morning Clean at 8 o'Clock on Wednesday for 1 hours. Amber 309
 45: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. GRIALOU IRENE 416;
@@ -81,15 +81,15 @@ Jobs by Job Order
 52: Dinner Prep at 14 o'Clock on Wednesday for 2 hours. Andrew Ayma 211
 53: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. Drew 104
 54: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. valerie 304
-55: Dishes and Salads at 17 o'Clock on Wednesday for 1 hours. Marco Alanis 2
-56: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Josh 308
-57: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Darcy 506
-58: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Mason 105
-59: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Sally 507
-60: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Nhut 316
-61: Fridge Clean at 21 o'Clock on Wednesday for 1 hours. Heriberto Quintanilla 513
-62: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. Aaron 504
-63: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. Ryan 307
+55: Dishes and Salads at 17 o'Clock on Wednesday for 1 hours. Josh 308
+56: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Darcy 506
+57: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Sally 507
+58: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Nhut 316
+59: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Heriberto Quintanilla 513
+60: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. Aaron 504
+61: Fridge Clean at 21 o'Clock on Wednesday for 1 hours. Sally 507
+62: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. Ryan 307
+63: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. Josh 323
 64: Morning Clean at 8 o'Clock on Thursday for 1 hours. Andrew Piotrowski 503
 65: Morning Clean at 8 o'Clock on Thursday for 1 hours. Vanesse 
 66: Lunch Cook at 9 o'Clock on Thursday for 2 hours. Lainy McGee 220
@@ -123,7 +123,7 @@ Jobs by Job Order
 94: Dinner Prep at 14 o'Clock on Friday for 2 hours. David Socol 510
 95: Dinner Cook at 16 o'Clock on Friday for 2 hours. Andrew Hu  511
 96: Dinner Cook at 16 o'Clock on Friday for 2 hours. Christina 204
-97: Dishes and Salads at 17 o'Clock on Friday for 1 hours. Aaron 504
+97: Dishes and Salads at 17 o'Clock on Friday for 1 hours. Ryan 307
 98: Dinner Clean at 18 o'Clock on Friday for 2 hours. Alex 112
 99: Dinner Clean at 18 o'Clock on Friday for 2 hours. Patricio 513
 100: Dinner Clean at 18 o'Clock on Friday for 2 hours. David 217
@@ -145,7 +145,6 @@ Jobs by Job Order
 116: Midnight Alice at 22 o'Clock on Saturday for 1 hours. Gavin 104
 117: Midnight Alice at 22 o'Clock on Saturday for 1 hours. Rishi 317
 Students with not enough hours
-Josh: 323 needs 1 hours
-Thalia Bp: 208 needs 2 hours
+Thalia Bp: 208 needs 1 hours
 SAURABH TANDON: 324 needs 4 hours
-Jacqueline: 201 needs 2 hours
+Jacqueline: 201 needs 4 hours

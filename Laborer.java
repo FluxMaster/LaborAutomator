@@ -377,6 +377,9 @@ public class Laborer{
 		//Then we need to go through the "Sorter" create the "Labor Schedule"
 		//Create Labor Schedule Structure??
 		
+	    FileWriter fw = new FileWriter("ScheduleData.csv");
+		
+		
 		//Go through each job
 		for(int i = 0; i < jobList.size(); i++)
 		{
@@ -395,6 +398,7 @@ public class Laborer{
 						((Job)jobList.get(i)).getPerson(j).addHours(((Job)jobList.get(i)).getLength());
 						((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
 						((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
+						fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
 						posfilled = true;
 						break;
 					}
@@ -404,6 +408,8 @@ public class Laborer{
 				//System.out.println("Nobody to fill this\n");
 			}
 		}
+		
+		fw.close();
 		//End Loop
 		
 		
