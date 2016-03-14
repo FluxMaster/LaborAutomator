@@ -70,11 +70,12 @@ Anthony Stannard 415,Dinner Clean,4,12,2
 Pedro 411,Fridge Clean,5,15,1
 Dylan 109,Brunch Cook,6,4,2
 David Socol 510,Brunch Cook,6,4,2
-Alex Penn 110,Dinner Clean,2,12,2
+Alex Penn 110,Brunch Cook,6,4,2
 Anthony Stannard 415,Dinner Clean,2,12,2
 Taylor 210,Dinner Clean,2,12,2
 Christina 204,Dinner Clean,2,12,2
 Andrew Hu  511,Dinner Clean,2,12,2
+Josh 308,Dinner Clean,2,12,2
 Alex 112,Dinner Clean,1,12,2
 Christina 204,Dinner Clean,1,12,2
 Josh 308,Dinner Clean,1,12,2
@@ -88,7 +89,7 @@ Patricio 513,Dinner Clean,5,12,2
 Alex 112,Dinner Clean,5,12,2
 David 217,Dinner Clean,5,12,2
 Andrew Hu  511,Dinner Clean,5,12,2
-Josh 308,Dinner Clean,5,12,2
+Darcy 506,Dinner Clean,5,12,2
 Pedro 411,Brunch Clean,6,7,2
 Rishi 317,Brunch Clean,6,7,2
 Marco Alanis 2,Brunch Clean,6,7,2
@@ -99,12 +100,12 @@ Evert Keller 514,Midnight Alice,6,16,1
 Jennifer 223,Midnight Alice,6,16,1
 Brian Richer 306,Dishes and Salads,1,11,1
 Marco Alanis 2,Dinner Cook,5,10,2
-Darcy 506,Dinner Cook,5,10,2
+Mason 105,Dinner Cook,5,10,2
 Gavin 104,Midnight Alice,0,16,1
 Ryan 517,Midnight Alice,0,16,1
 Josh 206,Dishes and Salads,3,11,1
-Mason 105,Dinner Cook,0,10,2
 Sally 507,Dinner Cook,0,10,2
+Nhut 316,Dinner Cook,0,10,2
 Patricio 513,Fridge Clean,0,15,1
 Rishi 317,Dishes and Salads,2,11,1
 Sally 507,Dinner Clean,3,12,2
@@ -112,21 +113,21 @@ Nhut 316,Dinner Clean,3,12,2
 Heriberto Quintanilla 513,Dinner Clean,3,12,2
 Aaron 504,Dinner Clean,3,12,2
 Ryan 307,Dinner Clean,3,12,2
-Nhut 316,Dishes and Salads,0,11,1
-Heriberto Quintanilla 513,Dinner Clean,0,12,2
+Heriberto Quintanilla 513,Dishes and Salads,0,11,1
 Aaron 504,Dinner Clean,0,12,2
 Crystal Wong C304,Dinner Clean,0,12,2
 Ryan 307,Dinner Clean,0,12,2
 Brit'ne 303,Dinner Clean,0,12,2
-Nhut 316,Midnight Alice,2,16,1
+Josh 323,Dinner Clean,0,12,2
+Heriberto Quintanilla 513,Midnight Alice,2,16,1
 Josh 323,Midnight Alice,2,16,1
 Josh 323,Fridge Clean,3,15,1
-Josh 323,Midnight Alice,3,16,1
 Thalia Bp 208,Midnight Alice,3,16,1
-Josh 323,Dishes and Salads,5,11,1
+Jacqueline 201,Midnight Alice,3,16,1
+Thalia Bp 208,Dishes and Salads,5,11,1
 Thalia Bp 208,Midnight Alice,1,16,1
 Jacqueline 201,Midnight Alice,1,16,1
 Thalia Bp 208,Fridge Clean,2,15,1
 Jacqueline 201,Dinner Prep,0,8,2
 SAURABH TANDON 324,Dinner Prep,0,8,2
-Thalia Bp 208,Fridge Clean,1,15,1
+SAURABH TANDON 324,Fridge Clean,1,15,1

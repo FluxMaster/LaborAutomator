@@ -12,15 +12,17 @@ public class Person implements Comparable<Person>
 	private Schedule sched;
 	private int hours;
 	private ArrayList jobsList;
+	private String preference;
 	
 	//Constructor
-	public Person(String name, String room, Schedule sched)
+	public Person(String name, String room, String preference, Schedule sched)
 	{
 		this.name=name;
 		this.room=room;
 		this.sched=sched;
 		this.avail = 0;
 		this.hours = 0;
+		this.preference = preference;
 		jobsList = new ArrayList(0);
 	}
 	
@@ -49,6 +51,11 @@ public class Person implements Comparable<Person>
 		return this.avail;
 	}
 	
+	public String getPreference()
+	{
+		return this.preference;
+	}
+	
 	//Functions
 	public void incrementAvail()
 	{
@@ -60,10 +67,27 @@ public class Person implements Comparable<Person>
 		this.hours += num;
 	}
 	
+	public void removeHours(int num)
+	{
+		this.hours -= num;
+	}
+	
 	public void addJob(Job j)
 	{
 		jobsList.add(j);
 		addHours(j.getLength());
+	}
+	
+	public void removeJob(Job j)
+	{
+		for(int i = 0; i<jobsList.size(); i++)
+		{
+			if (j.equals(jobsList.get(i)))
+			{
+				jobsList.remove(i);
+			}
+		}
+		removeHours(j.getLength());
 	}
 	
 	public boolean hasJob(Job j)

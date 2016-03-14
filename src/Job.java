@@ -9,8 +9,6 @@ import java.io.*;
 public class Job implements Comparable<Job>
 {
 	private static int count;
-	
-	
 	private String name;
 	private int time;
 	private int day;
@@ -18,20 +16,23 @@ public class Job implements Comparable<Job>
 	private ArrayList people;
 	private int ID;
 	private Person doer;
+	private String type;
 	
 	//It's important to note that time slots are not
 	//referenced by time buy by numbers 0 - 16
 	//This will line up with the other objects well
 	
 	//Constructor
-	public Job(String name, int day, int time, int length)
+	public Job(String name, int day, int time, int length, String type)
 	{
 		this.name = name;
 		this.time = time;
 		this.day = day;
 		this.length = length;
 		this.ID = ++count;
+		this.type = type;
 		people = new ArrayList(0);
+		
 	}
 	
 	//Adds a person who can do this job
@@ -102,6 +103,15 @@ public class Job implements Comparable<Job>
 		return this.doer;
 	}
 	
+	public String getType()
+	{
+		return this.type;
+	}
+	
+	public void removeDoer()
+	{
+		this.doer = null;
+	}
 	
 	public boolean equals(Job j)
 	{

@@ -7,7 +7,8 @@ import java.util.*;
 import java.io.*;
 import java.util.regex.Pattern;
 
-public class Laborer{
+public class Laborer
+{
 	
 	public static void main(String[] args) throws IOException
 	{
@@ -56,6 +57,11 @@ public class Laborer{
 			sc.next();
 			String room = sc.next();
 			//System.out.println(name + " " + room);
+			
+			sc.nextLine();
+			sc.next();
+			String preference = sc.next();
+			
 			
 			//Begin Loop
 			sc.nextLine();
@@ -141,7 +147,7 @@ public class Laborer{
 							 week[3],week[4],week[5],
 							 week[6]);
 			//Form Person Object
-			Person finalPerson = new Person(name,room,finalSched);
+			Person finalPerson = new Person(name,room,preference,finalSched);
 			//Put it in the Hash
 			//System.out.println("Putting " + finalPerson.getName() + " in the hash");
 			members.put((String)(finalPerson.getName() +" "+ finalPerson.getRoom()),finalPerson);
@@ -181,7 +187,8 @@ public class Laborer{
 					Job temp = new Job(splitter[0],
 									Integer.parseInt(splitter[1]),
 									Integer.parseInt(splitter[2]),
-									Integer.parseInt(splitter[3]));
+									Integer.parseInt(splitter[3]),
+									splitter[4]);
 					jobList.add(temp);
 				}
 			}
@@ -203,7 +210,8 @@ public class Laborer{
 						Job temp = new Job(splitter[1],
 										Integer.parseInt(splitter[2]),
 										Integer.parseInt(splitter[3]),
-										Integer.parseInt(splitter[4]));
+										Integer.parseInt(splitter[4]),
+										"Assigned");
 						((Person)members.get(splitter[0])).addJob(temp);
 						System.out.println(temp + " " + splitter[0]);
 					}
@@ -234,7 +242,7 @@ public class Laborer{
 		Collections.sort(jobList, new JobTimeSorter());
 		
 		//Begin Loop through Jobs
-		Job lastJob = new Job("",0,0,0);
+		Job lastJob = new Job("",0,0,0,"");
 		for(int i = 0; i < jobList.size(); i++)
 		{
 			//Begin Loop through people
@@ -310,7 +318,7 @@ public class Laborer{
 			while(HOURSFLEX > 3)
 			{
 				//System.out.println(peopleByAvail.get(w).getName());
-				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4));
+				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4,"Flex"));
 				//((Person)(peopleByAvail.get(w))).addHours(4);
 				HOURSFLEX-=4;
 				System.out.println(((Person)peopleByAvail.get(w)) + " has 4 hours of Flex Labor");
@@ -359,12 +367,13 @@ public class Laborer{
 		*/
 		
 		//Then we need to go through the "Sorter" create the "Labor Schedule"
-		//Create Labor Schedule Structure??
 		
 	    FileWriter fw = new FileWriter("ScheduleData.csv");
 		fw.write("#person,name,day,time,length");
 		
 		//Go through each job
+		int weight = 10;
+		
 		for(int i = 0; i < jobList.size(); i++)
 		{
 			boolean posfilled = false;
@@ -375,24 +384,24 @@ public class Laborer{
 			{
 				//check if at hours!
 				if((((Job)jobList.get(i)).getPerson(j).getHours() + ((Job)jobList.get(i)).getLength() <= NUMBEROFHOURS))
+				{
 					if(!(((Job)jobList.get(i)).getPerson(j).hasJob(((Job)jobList.get(i)))))
 					{
 						//write labor schedule to file with a >> command
-						//System.out.println(((Job)jobList.get(i)).getPerson(j).getName() + " " + ((Job)jobList.get(i)).getPerson(j).getRoom()+ "\n");
-						//((Job)jobList.get(i)).getPerson(j).addHours(((Job)jobList.get(i)).getLength());
 						((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
 						((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
 						fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
 						posfilled = true;
 						break;
 					}
+				}
 			}
 			if(!posfilled)
 			{
-				//System.out.println("Nobody to fill this\n");
+			
 			}
 		}
-		
+
 		fw.close();
 		//End Loop
 		

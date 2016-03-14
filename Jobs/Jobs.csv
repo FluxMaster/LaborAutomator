@@ -1,143 +1,144 @@
-#Name,Day,Time,Length
-#You can write Whatever you want,,,
-#After '#' and It'll be ignored,,,
-#by the Parser,,,
-#Monday,,,
-Morning Clean,1,2,1
-Morning Clean,1,2,1
-Lunch Cook,1,3,2
-Lunch Cook,1,3,2
-Lunch Cook,1,3,2
-Pot Scrub,1,6,1
-Lunch Clean,1,7,1
-Lunch Clean,1,7,1
-Dinner Prep,1,8,2
-Dinner Prep,1,8,2
-Dinner Cook,1,10,2
-Dinner Cook,1,10,2
-Dishes and Salads,1,11,1
-Dinner Clean,1,12,2
-Dinner Clean,1,12,2
-Dinner Clean,1,12,2
-Dinner Clean,1,12,2
-Dinner Clean,1,12,2
-Fridge Clean,1,15,1
-Midnight Alice,1,16,1
-Midnight Alice,1,16,1
-#Tuesday,,,
-Morning Clean,2,2,1
-Morning Clean,2,2,1
-Lunch Cook,2,3,2
-Lunch Cook,2,3,2
-Lunch Cook,2,3,2
-Pot Scrub,2,6,1
-Lunch Clean,2,7,1
-Lunch Clean,2,7,1
-Dinner Prep,2,8,2
-Dinner Prep,2,8,2
-Dinner Cook,2,10,2
-Dinner Cook,2,10,2
-Dishes and Salads,2,11,1
-Dinner Clean,2,12,2
-Dinner Clean,2,12,2
-Dinner Clean,2,12,2
-Dinner Clean,2,12,2
-Dinner Clean,2,12,2
-Fridge Clean,2,15,1
-Midnight Alice,2,16,1
-Midnight Alice,2,16,1
-#Wednesday,,,
-Morning Clean,3,2,1
-Morning Clean,3,2,1
-Lunch Cook,3,3,2
-Lunch Cook,3,3,2
-Lunch Cook,3,3,2
-Pot Scrub,3,6,1
-Lunch Clean,3,7,1
-Lunch Clean,3,7,1
-Dinner Prep,3,8,2
-Dinner Prep,3,8,2
-Dinner Cook,3,10,2
-Dinner Cook,3,10,2
-Dishes and Salads,3,11,1
-Dinner Clean,3,12,2
-Dinner Clean,3,12,2
-Dinner Clean,3,12,2
-Dinner Clean,3,12,2
-Dinner Clean,3,12,2
-Fridge Clean,3,15,1
-Midnight Alice,3,16,1
-Midnight Alice,3,16,1
-#Thursday,,,
-Morning Clean,4,2,1
-Morning Clean,4,2,1
-Lunch Cook,4,3,2
-Lunch Cook,4,3,2
-Lunch Cook,4,3,2
-Pot Scrub,4,6,1
-Lunch Clean,4,7,1
-Lunch Clean,4,7,1
-Dinner Prep,4,8,2
-Dinner Prep,4,8,2
-Dinner Cook,4,10,2
-Dinner Cook,4,10,2
-Dishes and Salads,4,11,1
-Dinner Clean,4,12,2
-Dinner Clean,4,12,2
-Dinner Clean,4,12,2
-Dinner Clean,4,12,2
-Dinner Clean,4,12,2
-Fridge Clean,4,15,1
-Midnight Alice,4,16,1
-Midnight Alice,4,16,1
-#Friday,,,
-Morning Clean,5,2,1
-Morning Clean,5,2,1
-Lunch Cook,5,3,2
-Lunch Cook,5,3,2
-Lunch Cook,5,3,2
-Pot Scrub,5,6,1
-Lunch Clean,5,7,1
-Lunch Clean,5,7,1
-Dinner Prep,5,8,2
-Dinner Prep,5,8,2
-Dinner Cook,5,10,2
-Dinner Cook,5,10,2
-Dishes and Salads,5,11,1
-Dinner Clean,5,12,2
-Dinner Clean,5,12,2
-Dinner Clean,5,12,2
-Dinner Clean,5,12,2
-Dinner Clean,5,12,2
-Fridge Clean,5,15,1
-Midnight Alice,5,16,1
-Midnight Alice,5,16,1
-#Saturday,,,
-Morning Clean,6,3,1
-Morning Clean,6,3,1
-Brunch Cook,6,4,2
-Brunch Cook,6,4,2
-Brunch Clean,6,7,2
-Brunch Clean,6,7,2
-Brunch Clean,6,7,2
-Brunch Clean,6,7,2
-Fridge Clean,6,15,1
-Midnight Alice,6,16,1
-Midnight Alice,6,16,1
-Midnight Alice,6,16,1
-#Sunday,,,
-Morning Clean,0,3,1
-Morning Clean,0,3,1
-Dinner Prep,0,8,2
-Dinner Prep,0,8,2
-Dinner Cook,0,10,2
-Dinner Cook,0,10,2
-Dishes and Salads,0,11,1
-Dinner Clean,0,12,2
-Dinner Clean,0,12,2
-Dinner Clean,0,12,2
-Dinner Clean,0,12,2
-Dinner Clean,0,12,2
-Fridge Clean,0,15,1
-Midnight Alice,0,16,1
-Midnight Alice,0,16,1
+#Name,Day,Time,Length,Type
+#You can write Whatever you want,,,,
+#After '#' and It'll be ignored,,,,
+#by the Parser,,,,
+#Monday,,,,
+Morning Clean,1,2,1,Clean
+Morning Clean,1,2,1,Clean
+Lunch Cook,1,3,2,Cook
+Lunch Cook,1,3,2,Cook
+Lunch Cook,1,3,2,Cook
+Pot Scrub,1,6,1,Clean
+Lunch Clean,1,7,1,Clean
+Lunch Clean,1,7,1,Clean
+Dinner Prep,1,8,2,Cook
+Dinner Prep,1,8,2,Cook
+Dinner Cook,1,10,2,Cook
+Dinner Cook,1,10,2,Cook
+Dishes and Salads,1,11,1,none
+Dinner Clean,1,12,2,Clean
+Dinner Clean,1,12,2,Clean
+Dinner Clean,1,12,2,Clean
+Dinner Clean,1,12,2,Clean
+Dinner Clean,1,12,2,Clean
+Fridge Clean,1,15,1,Clean
+Midnight Alice,1,16,1,Clean
+Midnight Alice,1,16,1,Clean
+#Tuesday,,,,
+Morning Clean,2,2,1,Clean
+Morning Clean,2,2,1,Clean
+Lunch Cook,2,3,2,Cook
+Lunch Cook,2,3,2,Cook
+Lunch Cook,2,3,2,Cook
+Pot Scrub,2,6,1,Clean
+Lunch Clean,2,7,1,Clean
+Lunch Clean,2,7,1,Clean
+Dinner Prep,2,8,2,Cook
+Dinner Prep,2,8,2,Cook
+Dinner Cook,2,10,2,Cook
+Dinner Cook,2,10,2,Cook
+Dishes and Salads,2,11,1,none
+Dinner Clean,2,12,2,Clean
+Dinner Clean,2,12,2,Clean
+Dinner Clean,2,12,2,Clean
+Dinner Clean,2,12,2,Clean
+Dinner Clean,2,12,2,Clean
+Fridge Clean,2,15,1,Clean
+Midnight Alice,2,16,1,Clean
+Midnight Alice,2,16,1,Clean
+#Wednesday,,,,
+Morning Clean,3,2,1,Clean
+Morning Clean,3,2,1,Clean
+Lunch Cook,3,3,2,Cook
+Lunch Cook,3,3,2,Cook
+Lunch Cook,3,3,2,Cook
+Pot Scrub,3,6,1,Clean
+Lunch Clean,3,7,1,Clean
+Lunch Clean,3,7,1,Clean
+Dinner Prep,3,8,2,Cook
+Dinner Prep,3,8,2,Cook
+Dinner Cook,3,10,2,Cook
+Dinner Cook,3,10,2,Cook
+Dishes and Salads,3,11,1,none
+Dinner Clean,3,12,2,Clean
+Dinner Clean,3,12,2,Clean
+Dinner Clean,3,12,2,Clean
+Dinner Clean,3,12,2,Clean
+Dinner Clean,3,12,2,Clean
+Fridge Clean,3,15,1,Clean
+Midnight Alice,3,16,1,Clean
+Midnight Alice,3,16,1,Clean
+#Thursday,,,,
+Morning Clean,4,2,1,Clean
+Morning Clean,4,2,1,Clean
+Lunch Cook,4,3,2,Cook
+Lunch Cook,4,3,2,Cook
+Lunch Cook,4,3,2,Cook
+Pot Scrub,4,6,1,Clean
+Lunch Clean,4,7,1,Clean
+Lunch Clean,4,7,1,Clean
+Dinner Prep,4,8,2,Cook
+Dinner Prep,4,8,2,Cook
+Dinner Cook,4,10,2,Cook
+Dinner Cook,4,10,2,Cook
+Dishes and Salads,4,11,1,none
+Dinner Clean,4,12,2,Clean
+Dinner Clean,4,12,2,Clean
+Dinner Clean,4,12,2,Clean
+Dinner Clean,4,12,2,Clean
+Dinner Clean,4,12,2,Clean
+Fridge Clean,4,15,1,Clean
+Midnight Alice,4,16,1,Clean
+Midnight Alice,4,16,1,Clean
+#Friday,,,,
+Morning Clean,5,2,1,Clean
+Morning Clean,5,2,1,Clean
+Lunch Cook,5,3,2,Cook
+Lunch Cook,5,3,2,Cook
+Lunch Cook,5,3,2,Cook
+Pot Scrub,5,6,1,Clean
+Lunch Clean,5,7,1,Clean
+Lunch Clean,5,7,1,Clean
+Dinner Prep,5,8,2,Cook
+Dinner Prep,5,8,2,Cook
+Dinner Cook,5,10,2,Cook
+Dinner Cook,5,10,2,Cook
+Dishes and Salads,5,11,1,none
+Dinner Clean,5,12,2,Clean
+Dinner Clean,5,12,2,Clean
+Dinner Clean,5,12,2,Clean
+Dinner Clean,5,12,2,Clean
+Dinner Clean,5,12,2,Clean
+Fridge Clean,5,15,1,Clean
+Midnight Alice,5,16,1,Clean
+Midnight Alice,5,16,1,Clean
+#Saturday,,,,
+Morning Clean,6,3,1,Clean
+Morning Clean,6,3,1,Clean
+Brunch Cook,6,4,2,Cook
+Brunch Cook,6,4,2,Cook
+Brunch Cook,6,4,2,Cook
+Brunch Clean,6,7,2,Clean
+Brunch Clean,6,7,2,Clean
+Brunch Clean,6,7,2,Clean
+Brunch Clean,6,7,2,Clean
+Fridge Clean,6,15,1,Clean
+Midnight Alice,6,16,1,Clean
+Midnight Alice,6,16,1,Clean
+Midnight Alice,6,16,1,Clean
+#Sunday,,,,
+Morning Clean,0,3,1,Clean
+Morning Clean,0,3,1,Clean
+Dinner Prep,0,8,2,Cook
+Dinner Prep,0,8,2,Cook
+Dinner Cook,0,10,2,Cook
+Dinner Cook,0,10,2,Cook
+Dishes and Salads,0,11,1,none
+Dinner Clean,0,12,2,Clean
+Dinner Clean,0,12,2,Clean
+Dinner Clean,0,12,2,Clean
+Dinner Clean,0,12,2,Clean
+Dinner Clean,0,12,2,Clean
+Fridge Clean,0,15,1,Clean
+Midnight Alice,0,16,1,Clean
+Midnight Alice,0,16,1,Clean
