@@ -368,52 +368,101 @@ public class Laborer
 		
 		//Then we need to go through the "Sorter" create the "Labor Schedule"
 		
-	    FileWriter fw = new FileWriter("ScheduleData.csv");
-		fw.write("#person,name,day,time,length");
-		
-		//Go through each job
-		int weight = 10;
-		
-		for(int i = 0; i < jobList.size(); i++)
-		{
-			boolean posfilled = false;
-			//System.out.println(((Job)jobList.get(i)));
-			//Choose people with least availability (Pre Sorted)!
-			//System.out.print((((Job)jobList.get(i))) + " ");
-			for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
+		int weight = 1000;
+		while(weight>=0)
+		{			
+			boolean SAT = true;
+			FileWriter fw = new FileWriter("ScheduleData.csv");
+			fw.write("#person,name,day,time,length"+"\n");
+			//Go through each job
+			for(int i = 0; i < jobList.size(); i++)
 			{
-				//check if at hours!
-				if((((Job)jobList.get(i)).getPerson(j).getHours() + ((Job)jobList.get(i)).getLength() <= NUMBEROFHOURS))
+				boolean posfilled = false;
+				//Choose people with least availability.
+				//We need to resort if we want to capture preferences.
+				//Such a sort will subtract the current weight if the job type matches person's preference
+				
+				//Adjust for preferences
+				for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
 				{
-					if(!(((Job)jobList.get(i)).getPerson(j).hasJob(((Job)jobList.get(i)))))
+					if(((((Job)jobList.get(i)).getPerson(j)).getPreference()).equalsIgnoreCase(((Job)jobList.get(i)).getType()))
+						(((Job)jobList.get(i)).getPerson(j)).subAvail(weight);
+					//System.out.println((((Job)jobList.get(i)).getPerson(j)) + " had their weight reduced to " + (((Job)jobList.get(i)).getPerson(j)).getAvail());
+				}
+				//Sort for preferences
+				((Job)jobList.get(i)).sortPeople();
+				
+				for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
+				{
+					//check if at hours!
+					if((((Job)jobList.get(i)).getPerson(j).getHours() + ((Job)jobList.get(i)).getLength() <= NUMBEROFHOURS))
 					{
-						//write labor schedule to file with a >> command
-						((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
-						((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
-						fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
-						posfilled = true;
-						break;
+						if(!(((Job)jobList.get(i)).getPerson(j).hasJob(((Job)jobList.get(i)))))
+						{
+							((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
+							((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
+							fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
+							posfilled = true;
+							break;
+						}
 					}
 				}
+				
+				//Adjust preferences back;
+				for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
+				{
+					if(((((Job)jobList.get(i)).getPerson(j)).getPreference()).equalsIgnoreCase(((Job)jobList.get(i)).getType()))
+						(((Job)jobList.get(i)).getPerson(j)).addAvail(weight);
+					//System.out.println((((Job)jobList.get(i)).getPerson(j)) + " had their weight reverted to " + (((Job)jobList.get(i)).getPerson(j)).getAvail());
+				}
+				
+				if(!posfilled)
+				{
+					System.out.println("Nobody to Fill " + jobList.get(i));
+					for(int j = 0; j<jobList.size(); j++)
+					{
+						((Job)jobList.get(j)).getDoer().removeJob((Job)jobList.get(j));
+						((Job)jobList.get(j)).removeDoer();
+					}
+					SAT = false;
+					break;
+				}
 			}
-			if(!posfilled)
+			if(SAT==false)
 			{
-			
+				System.out.println("SAT FALSE ON WEIGHT "+ weight);
+				weight--;
+			}
+			else
+			{
+				System.out.println("SAT TRUE ON WEIGHT " + weight);
+				System.out.println("Saving Schedule Data");
+				fw.close();
+				weight = -1;
 			}
 		}
-
-		fw.close();
-		//End Loop
-		
 		
 		Collections.sort(jobList,new JobTimeSorter());
 		
 		System.out.println("Jobs by Time");
+		double matchCount = 0;
 		for(int i = 0; i < jobList.size(); i++)
 		{
 			System.out.print((((Job)jobList.get(i))) + " ");
-			System.out.println((((Job)jobList.get(i))).getDoer());
+			System.out.print((((Job)jobList.get(i))).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
+			if(((Job)jobList.get(i)).getType().equals((((Job)jobList.get(i))).getDoer().getPreference()))
+			{
+				matchCount++;
+				System.out.println(" Match!");
+			}
+			else
+			{
+				System.out.println();
+			}
 		}
+		System.out.println();
+		System.out.println("Match Count is: " + matchCount);
+		System.out.println("Match rate is: " + (double)(matchCount/(double)jobList.size()));
 		
 		
 		//Go Through Each Person

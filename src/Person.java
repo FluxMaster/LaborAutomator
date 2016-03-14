@@ -51,6 +51,16 @@ public class Person implements Comparable<Person>
 		return this.avail;
 	}
 	
+	public void subAvail(int i)
+	{
+		this.avail -= i;
+	}
+	
+	public void addAvail(int i)
+	{
+		this.avail += i;
+	}
+	
 	public String getPreference()
 	{
 		return this.preference;
