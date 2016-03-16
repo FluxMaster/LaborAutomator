@@ -21,7 +21,7 @@ public class Laborer
 		while(questions)
 		{
 			Scanner askUsr = new Scanner(System.in);
-			System.out.println("How Many Hours of Flex do you have?");
+			System.out.println("How many hours of Flex labor needs to be worked?");
 			//This is the total number of Hours you have devoted to Flex Labor
 			HOURSFLEX = askUsr.nextInt();
 			
@@ -29,13 +29,13 @@ public class Laborer
 			//This determines how flex is given out
 			MAXHOURSFLEX = askUsr.nextInt();
 			
-			System.out.println("How Many hours will each member do?");
+			System.out.println("How many hours will each Laborer do in total?");
 			//This is the number of Hours you expect members to do weekly.
 			NUMBEROFHOURS = askUsr.nextInt();
 			
 			if(MAXHOURSFLEX>NUMBEROFHOURS)
 			{
-				System.out.println("That's too many Flex Hours, please try again");
+				System.out.println("The maximum Flex hours per Laborer is higher than the total hours per Laborer, please try again");
 			}
 			else
 			{
