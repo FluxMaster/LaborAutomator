@@ -393,6 +393,7 @@ public class Laborer
 		//Then we need to go through the "Sorter" create the "Labor Schedule"
 		
 		int weight = 1000;
+		int finalWeight = 0;
 		while(weight>=0)
 		{			
 			boolean SAT = true;
@@ -470,6 +471,7 @@ public class Laborer
 				//System.out.println("SAT TRUE ON WEIGHT " + weight);
 				System.out.println("Saving Schedule Data");
 				fw.close();
+				finalWeight = weight;
 				weight = -1;
 			}
 		}
@@ -503,7 +505,8 @@ public class Laborer
 		resultWriter.write("\n");
 		resultWriter.write("Match Count is: " + matchCount + "\n");
 		resultWriter.write("Match rate is: " + (double)(matchCount/(double)jobList.size()) + "\n");
-		resultWriter.write("Preferences were weighted at " + weight);
+		resultWriter.write("Preferences were weighted at " + finalWeight);
+		resultWriter.write("\n");
 		resultWriter.write("\n");
 		
 		//Go Through Each Person
