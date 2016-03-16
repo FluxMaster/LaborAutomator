@@ -12,17 +12,41 @@ public class Laborer
 	
 	public static void main(String[] args) throws IOException
 	{
-		
-		//This is the total number of Hours you have devoted to Flex Labor
-		int HOURSFLEX = 45;
-		
-		//This is the number of Hours you expect members to do weekly.
-		int NUMBEROFHOURS = 4;
+		boolean questions = true;
+		int HOURSFLEX = 0;
+		int MAXHOURSFLEX = 0;
+		int NUMBEROFHOURS = 0;
+		FileWriter resultWriter = new FileWriter("ScheduleResults.txt");
+
+		while(questions)
+		{
+			Scanner askUsr = new Scanner(System.in);
+			System.out.println("How Many Hours of Flex do you have?");
+			//This is the total number of Hours you have devoted to Flex Labor
+			HOURSFLEX = askUsr.nextInt();
+			
+			System.out.println("What is the maximum number of Flex hours a Laborer should be assigned?");
+			//This determines how flex is given out
+			MAXHOURSFLEX = askUsr.nextInt();
+			
+			System.out.println("How Many hours will each member do?");
+			//This is the number of Hours you expect members to do weekly.
+			NUMBEROFHOURS = askUsr.nextInt();
+			
+			if(MAXHOURSFLEX>NUMBEROFHOURS)
+			{
+				System.out.println("That's too many Flex Hours, please try again");
+			}
+			else
+			{
+				questions = false;
+			}
+		}
 		
 		//We need to input files and create the data structure
 		File sf = new File("Schedules");
 		File[] Scheds = sf.listFiles();
-		
+
 		
 		/*
 		for(int i = 0; i < Scheds.length; i++)
@@ -199,7 +223,7 @@ public class Laborer
 			try
 			{	
 				//Scan assigned job list "#person,name,day,time,length"
-				System.out.println("Assigned Jobs");
+				resultWriter.write("Assigned Jobs\n");
 				//System.out.println("StartLoop");
 				while(aj.hasNextLine())
 				{
@@ -213,29 +237,27 @@ public class Laborer
 										Integer.parseInt(splitter[4]),
 										"Assigned");
 						((Person)members.get(splitter[0])).addJob(temp);
-						System.out.println(temp + " " + splitter[0]);
+						resultWriter.write(temp + " " + splitter[0] + "\n");
 					}
 					
 				}
-				
-				//Hard Coded Stuff Build Parser for this instead later
-				/*
-				((Person)members.get("Olivia505")).addHours(2);
-				((Person)members.get("Callie404")).addHours(2);
-				((Person)members.get("Taylor210")).addHours(2);
-				*/
 			}
 			catch(Exception e)
 			{
-				System.out.println(e);
-				System.out.println("Something is probably wrong with your AssignedJobs.csv");
+				//System.out.println(e);
+				System.out.println("Something is wrong with your AssignedJobs.csv");
+				System.out.println("Check to make sure the names of People are spelled the same as they are in the schedule");
+				System.out.println("Moving on without it.");
 			}
 		}
 		catch(Exception e)
 		{
 			//System.out.println(e.toString());
-			System.out.println("No Assigned Jobs");
+			System.out.println("No Assigned Jobs File");
+			System.out.println("Moving on without it.");
 		}
+		
+		resultWriter.write("\n");
 		//By sorting the job list by time, users can order the jobs
 		//in Jobs.csv arbitrarily, but my lazy hack for preventing
 		//counting the same job multiple times will still work
@@ -312,28 +334,30 @@ public class Laborer
 		
 		if(HOURSFLEX>0)
 		{
-			System.out.println("Flex Laborers");
+			resultWriter.write("Flex Laborers\n");
 			
 			int w = 0;
 			while(HOURSFLEX > 3)
 			{
 				//System.out.println(peopleByAvail.get(w).getName());
-				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, 4,"Flex"));
+				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, MAXHOURSFLEX,"Flex"));
 				//((Person)(peopleByAvail.get(w))).addHours(4);
 				HOURSFLEX-=4;
-				System.out.println(((Person)peopleByAvail.get(w)) + " has 4 hours of Flex Labor");
+				resultWriter.write(((Person)peopleByAvail.get(w)) + " has " + MAXHOURSFLEX + " hours of Flex Labor\n");
 				w++;
 			}
 			
-			System.out.println("You have " + HOURSFLEX + " hours left of Flex Labor");	
+			resultWriter.write("You have " + HOURSFLEX + " hours left of Flex Labor\n");	
 		}
 		else
 		{
-			System.out.println("No Flex Laborers");
+			resultWriter.write("No Flex Laborers\n");
 		}
 		//Sort "Sorter" by number of people
 		
 		Collections.sort(jobList,new JobSizeSorter());
+		
+		resultWriter.write("\n");
 		
 		/*
 		System.out.println("PostSort");
@@ -418,24 +442,32 @@ public class Laborer
 				
 				if(!posfilled)
 				{
-					System.out.println("Nobody to Fill " + jobList.get(i));
-					for(int j = 0; j<jobList.size(); j++)
+					//System.out.println("Nobody to Fill " + jobList.get(i) + " at weight " + weight);
+					if(weight != 0)
 					{
-						((Job)jobList.get(j)).getDoer().removeJob((Job)jobList.get(j));
-						((Job)jobList.get(j)).removeDoer();
+						for(int j = 0; j<jobList.size(); j++)
+						{
+							if(((Job)jobList.get(j)).getDoer() != null)
+							{
+								((Job)jobList.get(j)).getDoer().removeJob((Job)jobList.get(j));
+								((Job)jobList.get(j)).removeDoer();
+							}
+							
+							
+						}
+						SAT = false;
+						break;
 					}
-					SAT = false;
-					break;
 				}
 			}
 			if(SAT==false)
 			{
-				System.out.println("SAT FALSE ON WEIGHT "+ weight);
+				//System.out.println("SAT FALSE ON WEIGHT "+ weight);
 				weight--;
 			}
 			else
 			{
-				System.out.println("SAT TRUE ON WEIGHT " + weight);
+				//System.out.println("SAT TRUE ON WEIGHT " + weight);
 				System.out.println("Saving Schedule Data");
 				fw.close();
 				weight = -1;
@@ -444,38 +476,50 @@ public class Laborer
 		
 		Collections.sort(jobList,new JobTimeSorter());
 		
-		System.out.println("Jobs by Time");
+		resultWriter.write("Jobs by Time\n");
 		double matchCount = 0;
 		for(int i = 0; i < jobList.size(); i++)
 		{
-			System.out.print((((Job)jobList.get(i))) + " ");
-			System.out.print((((Job)jobList.get(i))).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
-			if(((Job)jobList.get(i)).getType().equals((((Job)jobList.get(i))).getDoer().getPreference()))
+			resultWriter.write((((Job)jobList.get(i))) + " ");
+			if((((Job)jobList.get(i))).getDoer() == null)
 			{
-				matchCount++;
-				System.out.println(" Match!");
+				resultWriter.write("Nobody can do this\n");
 			}
 			else
 			{
-				System.out.println();
-			}
+				resultWriter.write((((Job)jobList.get(i))).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
+				if(((Job)jobList.get(i)).getType().equals((((Job)jobList.get(i))).getDoer().getPreference()))
+				{
+					matchCount++;
+					resultWriter.write(" Match!\n");
+				}
+				else
+				{
+					resultWriter.write("\n");
+				}
+			}			
 		}
-		System.out.println();
-		System.out.println("Match Count is: " + matchCount);
-		System.out.println("Match rate is: " + (double)(matchCount/(double)jobList.size()));
 		
+		resultWriter.write("\n");
+		resultWriter.write("Match Count is: " + matchCount + "\n");
+		resultWriter.write("Match rate is: " + (double)(matchCount/(double)jobList.size()) + "\n");
+		resultWriter.write("Preferences were weighted at " + weight);
+		resultWriter.write("\n");
 		
 		//Go Through Each Person
 		//Print the people with not enough hours
-		System.out.println("Students with not enough hours");
+		resultWriter.write("Students with not enough hours\n");
 		Iterator<Map.Entry<String, Person>> iterator = members.entrySet().iterator() ;
 		while(iterator.hasNext())
 		{
 			Map.Entry<String, Person> studentEntry = iterator.next();
 			if(studentEntry.getValue().getHours() < NUMBEROFHOURS)
 			{
-				System.out.println(studentEntry.getValue().getName() + ": " + studentEntry.getValue().getRoom() + " needs " + (NUMBEROFHOURS - studentEntry.getValue().getHours()) + " hours");
+				resultWriter.write(studentEntry.getValue().getName() + ": " + studentEntry.getValue().getRoom() + " needs " + (NUMBEROFHOURS - studentEntry.getValue().getHours()) + " hours\n");
 			}
 		}
+		
+		System.out.println("Saving Final Results");
+		resultWriter.close();
 	}
 }
