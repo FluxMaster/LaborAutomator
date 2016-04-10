@@ -1,2 +1,2 @@
-java -cp "src" Laborer
-pause
+@echo off
+java -cp "src" LaborerGUI

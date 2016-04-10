@@ -1,248 +1,190 @@
 Assigned Jobs
 
 Flex Laborers
-MARCELENE 406 has 2 hours of Flex Labor
-SHANEL 400 has 2 hours of Flex Labor
-MADELAINE 8 has 2 hours of Flex Labor
-EDDY 201 has 2 hours of Flex Labor
-MENDY 216 has 2 hours of Flex Labor
-SABRA 311 has 2 hours of Flex Labor
-FREEDA 509 has 2 hours of Flex Labor
-LENARD 313 has 2 hours of Flex Labor
-VERTIE 114 has 2 hours of Flex Labor
-VANETTA 408 has 2 hours of Flex Labor
+CLARICE 418 has 3 hours of Flex Labor
+FORREST 410 has 3 hours of Flex Labor
+VINCENZO 304 has 3 hours of Flex Labor
+TOBIAS 409 has 3 hours of Flex Labor
+ROSETTA 18 has 3 hours of Flex Labor
+VIOLA 3 has 3 hours of Flex Labor
+WILLENA 19 has 3 hours of Flex Labor
+CHELSEY 306 has 3 hours of Flex Labor
+MARVIN 509 has 3 hours of Flex Labor
+MELISSIA 408 has 3 hours of Flex Labor
 You have 0 hours left of Flex Labor
 
 Jobs by Time
-119: Morning Clean at 9 o'Clock on Sunday for 1 hours. RICARDA 309 Preference: Clean Match!
-120: Morning Clean at 9 o'Clock on Sunday for 1 hours. ROLF 118 Preference: Clean Match!
-121: Dinner Prep at 14 o'Clock on Sunday for 2 hours. DENVER 409 Preference: Cook Match!
-122: Dinner Prep at 14 o'Clock on Sunday for 2 hours. GLENNIS 17 Preference: Cook Match!
-123: Dinner Cook at 16 o'Clock on Sunday for 2 hours. SHANEL 400 Preference: Cook Match!
-124: Dinner Cook at 16 o'Clock on Sunday for 2 hours. LURLINE 115 Preference: Cook Match!
-125: Dishes and Salads at 17 o'Clock on Sunday for 1 hours. VERTIE 114 Preference: Cook
-126: Dinner Clean at 18 o'Clock on Sunday for 2 hours. ISIDRO 404 Preference: Clean Match!
-127: Dinner Clean at 18 o'Clock on Sunday for 2 hours. ELODIA 120 Preference: Clean Match!
-128: Dinner Clean at 18 o'Clock on Sunday for 2 hours. HANNAH 416 Preference: Clean Match!
-129: Dinner Clean at 18 o'Clock on Sunday for 2 hours. CHIQUITA 405 Preference: Clean Match!
-130: Dinner Clean at 18 o'Clock on Sunday for 2 hours. LORETA 403 Preference: Clean Match!
-131: Fridge Clean at 21 o'Clock on Sunday for 1 hours. MANDY 103 Preference: Clean Match!
-132: Midnight Alice at 22 o'Clock on Sunday for 1 hours. HARRIET 115 Preference: Clean Match!
-133: Midnight Alice at 22 o'Clock on Sunday for 1 hours. ELINORE 12 Preference: Clean Match!
-1: Morning Clean at 8 o'Clock on Monday for 1 hours. MANDY 103 Preference: Clean Match!
-2: Morning Clean at 8 o'Clock on Monday for 1 hours. GLAYDS 417 Preference: Clean Match!
-3: Lunch Cook at 9 o'Clock on Monday for 2 hours. VANETTA 408 Preference: Cook Match!
-4: Lunch Cook at 9 o'Clock on Monday for 2 hours. MATHILDE 6 Preference: Cook Match!
-5: Lunch Cook at 9 o'Clock on Monday for 2 hours. BRENT 402 Preference: Cook Match!
-6: Pot Scrub at 12 o'Clock on Monday for 1 hours. EDDY 201 Preference: Clean Match!
-7: Lunch Clean at 13 o'Clock on Monday for 1 hours. LENARD 313 Preference: Clean Match!
-8: Lunch Clean at 13 o'Clock on Monday for 1 hours. ALONA 518 Preference: Clean Match!
-9: Dinner Prep at 14 o'Clock on Monday for 2 hours. CHANDA 405 Preference: Cook Match!
-10: Dinner Prep at 14 o'Clock on Monday for 2 hours. ELICIA 120 Preference: Cook Match!
-11: Dinner Cook at 16 o'Clock on Monday for 2 hours. DENVER 409 Preference: Cook Match!
-12: Dinner Cook at 16 o'Clock on Monday for 2 hours. SHARELL 520 Preference: Cook Match!
-13: Dishes and Salads at 17 o'Clock on Monday for 1 hours. SHANEL 400 Preference: Cook
-14: Dinner Clean at 18 o'Clock on Monday for 2 hours. ALONA 518 Preference: Clean Match!
-15: Dinner Clean at 18 o'Clock on Monday for 2 hours. GLAYDS 417 Preference: Clean Match!
-16: Dinner Clean at 18 o'Clock on Monday for 2 hours. SAMATHA 206 Preference: Clean Match!
-17: Dinner Clean at 18 o'Clock on Monday for 2 hours. FILIBERTO 512 Preference: Clean Match!
-18: Dinner Clean at 18 o'Clock on Monday for 2 hours. WINTER 413 Preference: Clean Match!
-19: Fridge Clean at 21 o'Clock on Monday for 1 hours. MENDY 216 Preference: Clean Match!
-20: Midnight Alice at 22 o'Clock on Monday for 1 hours. RICARDA 309 Preference: Clean Match!
-21: Midnight Alice at 22 o'Clock on Monday for 1 hours. ROLF 118 Preference: Clean Match!
-22: Morning Clean at 8 o'Clock on Tuesday for 1 hours. FREEDA 509 Preference: Clean Match!
-23: Morning Clean at 8 o'Clock on Tuesday for 1 hours. MANDY 103 Preference: Clean Match!
-24: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. EARLIE 506 Preference: Cook Match!
-25: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. GEORGENE 300 Preference: Cook Match!
-26: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. ANGIE 102 Preference: Cook Match!
-27: Pot Scrub at 12 o'Clock on Tuesday for 1 hours. WINTER 413 Preference: Clean Match!
-28: Lunch Clean at 13 o'Clock on Tuesday for 1 hours. FILIBERTO 512 Preference: Clean Match!
-29: Lunch Clean at 13 o'Clock on Tuesday for 1 hours. HARRIET 310 Preference: Clean Match!
-30: Dinner Prep at 14 o'Clock on Tuesday for 2 hours. SHARELL 520 Preference: Cook Match!
-31: Dinner Prep at 14 o'Clock on Tuesday for 2 hours. MAGARET 216 Preference: Cook Match!
-32: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. JED 310 Preference: Cook Match!
-33: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. GARY 220 Preference: Cook Match!
-34: Dishes and Salads at 17 o'Clock on Tuesday for 1 hours. SABRA 311 Preference: Cook
-35: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. FREEDA 509 Preference: Clean Match!
-36: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. ALONA 518 Preference: Clean Match!
-37: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. GLAYDS 417 Preference: Clean Match!
-38: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. SAMATHA 206 Preference: Clean Match!
-39: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. WINTER 413 Preference: Clean Match!
-40: Fridge Clean at 21 o'Clock on Tuesday for 1 hours. ELINORE 12 Preference: Clean Match!
-41: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. JACQUELINE 503 Preference: Clean Match!
-42: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. SAMATHA 206 Preference: Clean Match!
-43: Morning Clean at 8 o'Clock on Wednesday for 1 hours. HELENE 404 Preference: Clean Match!
-44: Morning Clean at 8 o'Clock on Wednesday for 1 hours. ROLF 118 Preference: Clean Match!
-45: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. KRYSTAL 400 Preference: Cook Match!
-46: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. GARY 220 Preference: Cook Match!
-47: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. TRENA 100 Preference: Cook Match!
-48: Pot Scrub at 12 o'Clock on Wednesday for 1 hours. ILUMINADA 105 Preference: Clean Match!
-49: Lunch Clean at 13 o'Clock on Wednesday for 1 hours. ISIDRO 404 Preference: Clean Match!
-50: Lunch Clean at 13 o'Clock on Wednesday for 1 hours. TAMRA 517 Preference: Clean Match!
-51: Dinner Prep at 14 o'Clock on Wednesday for 2 hours. KRYSTAL 400 Preference: Cook Match!
-52: Dinner Prep at 14 o'Clock on Wednesday for 2 hours. ISIS 503 Preference: Cook Match!
-53: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. JED 310 Preference: Cook Match!
-54: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. ELVIN 215 Preference: Cook Match!
-55: Dishes and Salads at 17 o'Clock on Wednesday for 1 hours. BRENT 402 Preference: Cook
-56: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. EDDY 201 Preference: Clean Match!
-57: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. MANDY 103 Preference: Clean Match!
-58: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. JACQUELINE 503 Preference: Clean Match!
-59: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. LEONOR 311 Preference: Clean Match!
-60: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. HANNAH 416 Preference: Clean Match!
-61: Fridge Clean at 21 o'Clock on Wednesday for 1 hours. LENORA 202 Preference: Clean Match!
-62: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. LENARD 313 Preference: Clean Match!
-63: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. ISIDRO 404 Preference: Clean Match!
-64: Morning Clean at 8 o'Clock on Thursday for 1 hours. LEONOR 311 Preference: Clean Match!
-65: Morning Clean at 8 o'Clock on Thursday for 1 hours. ILUMINADA 105 Preference: Clean Match!
-66: Lunch Cook at 9 o'Clock on Thursday for 2 hours. GEORGENE 300 Preference: Cook Match!
-67: Lunch Cook at 9 o'Clock on Thursday for 2 hours. CHANDA 405 Preference: Cook Match!
-68: Lunch Cook at 9 o'Clock on Thursday for 2 hours. ELICIA 120 Preference: Cook Match!
-69: Pot Scrub at 12 o'Clock on Thursday for 1 hours. HANNAH 416 Preference: Clean Match!
-70: Lunch Clean at 13 o'Clock on Thursday for 1 hours. LORETA 403 Preference: Clean Match!
-71: Lunch Clean at 13 o'Clock on Thursday for 1 hours. HARRIET 115 Preference: Clean Match!
-72: Dinner Prep at 14 o'Clock on Thursday for 2 hours. HILTON 212 Preference: Cook Match!
-73: Dinner Prep at 14 o'Clock on Thursday for 2 hours. LURLINE 115 Preference: Cook Match!
-74: Dinner Cook at 16 o'Clock on Thursday for 2 hours. VERTIE 114 Preference: Cook Match!
-75: Dinner Cook at 16 o'Clock on Thursday for 2 hours. BRENT 402 Preference: Cook Match!
-76: Dishes and Salads at 17 o'Clock on Thursday for 1 hours. MARCELENE 406 Preference: Cook
-77: Dinner Clean at 18 o'Clock on Thursday for 2 hours. JACQUELINE 503 Preference: Clean Match!
-78: Dinner Clean at 18 o'Clock on Thursday for 2 hours. LENORA 202 Preference: Clean Match!
-79: Dinner Clean at 18 o'Clock on Thursday for 2 hours. KATIA 513 Preference: Clean Match!
-80: Dinner Clean at 18 o'Clock on Thursday for 2 hours. HARRIET 310 Preference: Clean Match!
-81: Dinner Clean at 18 o'Clock on Thursday for 2 hours. LORETA 403 Preference: Clean Match!
-82: Fridge Clean at 21 o'Clock on Thursday for 1 hours. ELODIA 120 Preference: Clean Match!
-83: Midnight Alice at 22 o'Clock on Thursday for 1 hours. ILUMINADA 105 Preference: Clean Match!
-84: Midnight Alice at 22 o'Clock on Thursday for 1 hours. CHIQUITA 405 Preference: Clean Match!
-85: Morning Clean at 8 o'Clock on Friday for 1 hours. LENORA 202 Preference: Clean Match!
-86: Morning Clean at 8 o'Clock on Friday for 1 hours. ILUMINADA 105 Preference: Clean Match!
-87: Lunch Cook at 9 o'Clock on Friday for 2 hours. SABRA 311 Preference: Cook Match!
-88: Lunch Cook at 9 o'Clock on Friday for 2 hours. HILTON 212 Preference: Cook Match!
-89: Lunch Cook at 9 o'Clock on Friday for 2 hours. LOLA 108 Preference: Cook Match!
-90: Pot Scrub at 12 o'Clock on Friday for 1 hours. ISIDRO 404 Preference: Clean Match!
-91: Lunch Clean at 13 o'Clock on Friday for 1 hours. ELINORE 12 Preference: Clean Match!
-92: Lunch Clean at 13 o'Clock on Friday for 1 hours. RICARDA 309 Preference: Clean Match!
-93: Dinner Prep at 14 o'Clock on Friday for 2 hours. LOLA 108 Preference: Cook Match!
-94: Dinner Prep at 14 o'Clock on Friday for 2 hours. GLENNIS 17 Preference: Cook Match!
-95: Dinner Cook at 16 o'Clock on Friday for 2 hours. MADELAINE 8 Preference: Cook Match!
-96: Dinner Cook at 16 o'Clock on Friday for 2 hours. MATHILDE 6 Preference: Cook Match!
-97: Dishes and Salads at 17 o'Clock on Friday for 1 hours. LENARD 313 Preference: Clean
-98: Dinner Clean at 18 o'Clock on Friday for 2 hours. MENDY 216 Preference: Clean Match!
-99: Dinner Clean at 18 o'Clock on Friday for 2 hours. TAMRA 517 Preference: Clean Match!
-100: Dinner Clean at 18 o'Clock on Friday for 2 hours. FILIBERTO 512 Preference: Clean Match!
-101: Dinner Clean at 18 o'Clock on Friday for 2 hours. KATIA 513 Preference: Clean Match!
-102: Dinner Clean at 18 o'Clock on Friday for 2 hours. CHIQUITA 405 Preference: Clean Match!
-103: Fridge Clean at 21 o'Clock on Friday for 1 hours. ELINORE 12 Preference: Clean Match!
-104: Midnight Alice at 22 o'Clock on Friday for 1 hours. ILUMINADA 105 Preference: Clean Match!
-105: Midnight Alice at 22 o'Clock on Friday for 1 hours. HARRIET 115 Preference: Clean Match!
-106: Morning Clean at 9 o'Clock on Saturday for 1 hours. TAMRA 517 Preference: Clean Match!
-107: Morning Clean at 9 o'Clock on Saturday for 1 hours. LENORA 202 Preference: Clean Match!
-108: Brunch Cook at 10 o'Clock on Saturday for 2 hours. EARLIE 506 Preference: Cook Match!
-109: Brunch Cook at 10 o'Clock on Saturday for 2 hours. ANGIE 102 Preference: Cook Match!
-110: Brunch Cook at 10 o'Clock on Saturday for 2 hours. ISIS 503 Preference: Cook Match!
-111: Brunch Clean at 13 o'Clock on Saturday for 2 hours. ELODIA 120 Preference: Clean Match!
-112: Brunch Clean at 13 o'Clock on Saturday for 2 hours. HARRIET 310 Preference: Clean Match!
-113: Brunch Clean at 13 o'Clock on Saturday for 2 hours. HARRIET 115 Preference: Clean Match!
-114: Brunch Clean at 13 o'Clock on Saturday for 2 hours. ARDELIA 409 Preference: Clean Match!
-115: Fridge Clean at 21 o'Clock on Saturday for 1 hours. LEONOR 311 Preference: Clean Match!
-116: Midnight Alice at 22 o'Clock on Saturday for 1 hours. TAMRA 517 Preference: Clean Match!
-117: Midnight Alice at 22 o'Clock on Saturday for 1 hours. LEONOR 311 Preference: Clean Match!
-118: Midnight Alice at 22 o'Clock on Saturday for 1 hours. KATIA 513 Preference: Clean Match!
+119: Morning Clean at 9 o'Clock on Sunday for 1 hours. MELISSIA 408 Preference: Clean Match!
+120: Morning Clean at 9 o'Clock on Sunday for 1 hours. ELANOR 302 Preference: Clean Match!
+121: Dinner Prep at 14 o'Clock on Sunday for 2 hours. KELSEY 208 Preference: Cook Match!
+122: Dinner Prep at 14 o'Clock on Sunday for 2 hours. ERNIE 404 Preference: Cook Match!
+123: Dinner Cook at 16 o'Clock on Sunday for 2 hours. JANETH 215 Preference: Cook Match!
+124: Dinner Cook at 16 o'Clock on Sunday for 2 hours. BUNNY 403 Preference: Cook Match!
+125: Dishes and Salads at 17 o'Clock on Sunday for 1 hours. TOBIAS 409 Preference: Cook
+126: Dinner Clean at 18 o'Clock on Sunday for 2 hours. ESMERALDA 318 Preference: Clean Match!
+127: Dinner Clean at 18 o'Clock on Sunday for 2 hours. LAURE 16 Preference: Clean Match!
+128: Dinner Clean at 18 o'Clock on Sunday for 2 hours. STACIA 303 Preference: Clean Match!
+129: Dinner Clean at 18 o'Clock on Sunday for 2 hours. KECIA 507 Preference: Clean Match!
+130: Dinner Clean at 18 o'Clock on Sunday for 2 hours. DOROTHY 409 Preference: Clean Match!
+131: Fridge Clean at 21 o'Clock on Sunday for 1 hours. KECIA 507 Preference: Clean Match!
+132: Midnight Alice at 22 o'Clock on Sunday for 1 hours. OTIS 320 Preference: Clean Match!
+133: Midnight Alice at 22 o'Clock on Sunday for 1 hours. RASHEEDA 511 Preference: Clean Match!
+1: Morning Clean at 8 o'Clock on Monday for 1 hours. OTIS 320 Preference: Clean Match!
+2: Morning Clean at 8 o'Clock on Monday for 1 hours. ALFONSO 520 Preference: Clean Match!
+3: Lunch Cook at 9 o'Clock on Monday for 2 hours. DARNELL 313 Preference: Cook Match!
+4: Lunch Cook at 9 o'Clock on Monday for 2 hours. RHONDA 307 Preference: Cook Match!
+5: Lunch Cook at 9 o'Clock on Monday for 2 hours. HONEY 513 Preference: Cook Match!
+6: Pot Scrub at 12 o'Clock on Monday for 1 hours. ALONA 111 Preference: Clean Match!
+7: Lunch Clean at 13 o'Clock on Monday for 1 hours. VIOLA 3 Preference: Clean Match!
+8: Lunch Clean at 13 o'Clock on Monday for 1 hours. WILLENA 19 Preference: Clean Match!
+9: Dinner Prep at 14 o'Clock on Monday for 2 hours. JULEE 404 Preference: Cook Match!
+10: Dinner Prep at 14 o'Clock on Monday for 2 hours. ERNIE 404 Preference: Cook Match!
+11: Dinner Cook at 16 o'Clock on Monday for 2 hours. RAE 117 Preference: Cook Match!
+12: Dinner Cook at 16 o'Clock on Monday for 2 hours. SEAN 118 Preference: Cook Match!
+13: Dishes and Salads at 17 o'Clock on Monday for 1 hours. FORREST 410 Preference: Cook
+14: Dinner Clean at 18 o'Clock on Monday for 2 hours. DANA 11 Preference: Clean Match!
+15: Dinner Clean at 18 o'Clock on Monday for 2 hours. LEOLA 501 Preference: Clean Match!
+16: Dinner Clean at 18 o'Clock on Monday for 2 hours. JENNIFER 402 Preference: Clean Match!
+17: Dinner Clean at 18 o'Clock on Monday for 2 hours. OLETA 211 Preference: Clean Match!
+18: Dinner Clean at 18 o'Clock on Monday for 2 hours. CIERRA 305 Preference: Clean Match!
+19: Fridge Clean at 21 o'Clock on Monday for 1 hours. SHERRIL 415 Preference: Clean Match!
+20: Midnight Alice at 22 o'Clock on Monday for 1 hours. ALONA 111 Preference: Clean Match!
+21: Midnight Alice at 22 o'Clock on Monday for 1 hours. NATALIA 316 Preference: Clean Match!
+22: Morning Clean at 8 o'Clock on Tuesday for 1 hours. KECIA 507 Preference: Clean Match!
+23: Morning Clean at 8 o'Clock on Tuesday for 1 hours. NATALIA 316 Preference: Clean Match!
+24: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. ELISABETH 312 Preference: Cook Match!
+25: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. DOMINQUE 206 Preference: Cook Match!
+26: Lunch Cook at 9 o'Clock on Tuesday for 2 hours. JODY 405 Preference: Cook Match!
+27: Pot Scrub at 12 o'Clock on Tuesday for 1 hours. ALFONSO 520 Preference: Clean Match!
+28: Lunch Clean at 13 o'Clock on Tuesday for 1 hours. ROGER 313 Preference: Clean Match!
+29: Lunch Clean at 13 o'Clock on Tuesday for 1 hours. JEFFERY 214 Preference: Clean Match!
+30: Dinner Prep at 14 o'Clock on Tuesday for 2 hours. JERRI 418 Preference: Cook Match!
+31: Dinner Prep at 14 o'Clock on Tuesday for 2 hours. SHAN 105 Preference: Cook Match!
+32: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. SHAN 105 Preference: Cook Match!
+33: Dinner Cook at 16 o'Clock on Tuesday for 2 hours. SHAWANDA 520 Preference: Cook Match!
+34: Dishes and Salads at 17 o'Clock on Tuesday for 1 hours. MARVIN 509 Preference: Cook
+35: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. MELLISA 304 Preference: Clean Match!
+36: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. OTIS 320 Preference: Clean Match!
+37: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. TAREN 409 Preference: Clean Match!
+38: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. RODGER 115 Preference: Clean Match!
+39: Dinner Clean at 18 o'Clock on Tuesday for 2 hours. SEEMA 302 Preference: Clean Match!
+40: Fridge Clean at 21 o'Clock on Tuesday for 1 hours. MELLISA 304 Preference: Clean Match!
+41: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. SHERRIL 415 Preference: Clean Match!
+42: Midnight Alice at 22 o'Clock on Tuesday for 1 hours. LEOLA 501 Preference: Clean Match!
+43: Morning Clean at 8 o'Clock on Wednesday for 1 hours. ROGER 313 Preference: Clean Match!
+44: Morning Clean at 8 o'Clock on Wednesday for 1 hours. NATALIA 316 Preference: Clean Match!
+45: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. GUS 20 Preference: Cook Match!
+46: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. BUNNY 403 Preference: Cook Match!
+47: Lunch Cook at 9 o'Clock on Wednesday for 2 hours. RAE 117 Preference: Cook Match!
+48: Pot Scrub at 12 o'Clock on Wednesday for 1 hours. DANA 11 Preference: Clean Match!
+49: Lunch Clean at 13 o'Clock on Wednesday for 1 hours. ELANOR 302 Preference: Clean Match!
+50: Lunch Clean at 13 o'Clock on Wednesday for 1 hours. LEOLA 501 Preference: Clean Match!
+51: Dinner Prep at 14 o'Clock on Wednesday for 2 hours. HONEY 513 Preference: Cook Match!
+52: Dinner Prep at 14 o'Clock on Wednesday for 2 hours. SHAWANDA 520 Preference: Cook Match!
+53: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. JULEE 404 Preference: Cook Match!
+54: Dinner Cook at 16 o'Clock on Wednesday for 2 hours. CODI 116 Preference: Cook Match!
+55: Dishes and Salads at 17 o'Clock on Wednesday for 1 hours. CANDI 406 Preference: Cook
+56: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. ELANOR 302 Preference: Clean Match!
+57: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. GARRET 518 Preference: Clean Match!
+58: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. TAREN 409 Preference: Clean Match!
+59: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. RODGER 115 Preference: Clean Match!
+60: Dinner Clean at 18 o'Clock on Wednesday for 2 hours. RASHEEDA 511 Preference: Clean Match!
+61: Fridge Clean at 21 o'Clock on Wednesday for 1 hours. CHELSEY 306 Preference: Clean Match!
+62: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. ROSETTA 18 Preference: Clean Match!
+63: Midnight Alice at 22 o'Clock on Wednesday for 1 hours. SHERRIL 415 Preference: Clean Match!
+64: Morning Clean at 8 o'Clock on Thursday for 1 hours. ROGER 313 Preference: Clean Match!
+65: Morning Clean at 8 o'Clock on Thursday for 1 hours. LAURAN 503 Preference: Clean Match!
+66: Lunch Cook at 9 o'Clock on Thursday for 2 hours. CODI 116 Preference: Cook Match!
+67: Lunch Cook at 9 o'Clock on Thursday for 2 hours. CHAD 411 Preference: Cook Match!
+68: Lunch Cook at 9 o'Clock on Thursday for 2 hours. TAKISHA 416 Preference: Cook Match!
+69: Pot Scrub at 12 o'Clock on Thursday for 1 hours. VANESSA 413 Preference: Clean Match!
+70: Lunch Clean at 13 o'Clock on Thursday for 1 hours. RASHEEDA 511 Preference: Clean Match!
+71: Lunch Clean at 13 o'Clock on Thursday for 1 hours. SEEMA 302 Preference: Clean Match!
+72: Dinner Prep at 14 o'Clock on Thursday for 2 hours. KELSEY 208 Preference: Cook Match!
+73: Dinner Prep at 14 o'Clock on Thursday for 2 hours. JANETH 215 Preference: Cook Match!
+74: Dinner Cook at 16 o'Clock on Thursday for 2 hours. DOMINQUE 206 Preference: Cook Match!
+75: Dinner Cook at 16 o'Clock on Thursday for 2 hours. ELIZABETH 113 Preference: Cook Match!
+76: Dishes and Salads at 17 o'Clock on Thursday for 1 hours. VINCENZO 304 Preference: Cook
+77: Dinner Clean at 18 o'Clock on Thursday for 2 hours. CAMELIA 7 Preference: Clean Match!
+78: Dinner Clean at 18 o'Clock on Thursday for 2 hours. STACIA 303 Preference: Clean Match!
+79: Dinner Clean at 18 o'Clock on Thursday for 2 hours. ALFONSO 520 Preference: Clean Match!
+80: Dinner Clean at 18 o'Clock on Thursday for 2 hours. JOHNETTE 413 Preference: Clean Match!
+81: Dinner Clean at 18 o'Clock on Thursday for 2 hours. ALONA 111 Preference: Clean Match!
+82: Fridge Clean at 21 o'Clock on Thursday for 1 hours. ROGER 313 Preference: Clean Match!
+83: Midnight Alice at 22 o'Clock on Thursday for 1 hours. DANA 11 Preference: Clean Match!
+84: Midnight Alice at 22 o'Clock on Thursday for 1 hours. GARRET 518 Preference: Clean Match!
+85: Morning Clean at 8 o'Clock on Friday for 1 hours. OLETA 211 Preference: Clean Match!
+86: Morning Clean at 8 o'Clock on Friday for 1 hours. SEEMA 302 Preference: Clean Match!
+87: Lunch Cook at 9 o'Clock on Friday for 2 hours. JODY 405 Preference: Cook Match!
+88: Lunch Cook at 9 o'Clock on Friday for 2 hours. ALVERA 516 Preference: Cook Match!
+89: Lunch Cook at 9 o'Clock on Friday for 2 hours. CHAD 411 Preference: Cook Match!
+90: Pot Scrub at 12 o'Clock on Friday for 1 hours. SOLANGE 400 Preference: Clean Match!
+91: Lunch Clean at 13 o'Clock on Friday for 1 hours. JENNIFER 402 Preference: Clean Match!
+92: Lunch Clean at 13 o'Clock on Friday for 1 hours. LAURE 16 Preference: Clean Match!
+93: Dinner Prep at 14 o'Clock on Friday for 2 hours. GUS 20 Preference: Cook Match!
+94: Dinner Prep at 14 o'Clock on Friday for 2 hours. SEAN 118 Preference: Cook Match!
+95: Dinner Cook at 16 o'Clock on Friday for 2 hours. ELISABETH 312 Preference: Cook Match!
+96: Dinner Cook at 16 o'Clock on Friday for 2 hours. JERRI 418 Preference: Cook Match!
+97: Dishes and Salads at 17 o'Clock on Friday for 1 hours. CLARICE 418 Preference: Cook
+98: Dinner Clean at 18 o'Clock on Friday for 2 hours. ESMERALDA 318 Preference: Clean Match!
+99: Dinner Clean at 18 o'Clock on Friday for 2 hours. ODIS 8 Preference: Clean Match!
+100: Dinner Clean at 18 o'Clock on Friday for 2 hours. SOLANGE 400 Preference: Clean Match!
+101: Dinner Clean at 18 o'Clock on Friday for 2 hours. VANESSA 413 Preference: Clean Match!
+102: Dinner Clean at 18 o'Clock on Friday for 2 hours. CIERRA 305 Preference: Clean Match!
+103: Fridge Clean at 21 o'Clock on Friday for 1 hours. NATALIA 316 Preference: Clean Match!
+104: Midnight Alice at 22 o'Clock on Friday for 1 hours. SHERRIL 415 Preference: Clean Match!
+105: Midnight Alice at 22 o'Clock on Friday for 1 hours. MELLISA 304 Preference: Clean Match!
+106: Morning Clean at 9 o'Clock on Saturday for 1 hours. VANESSA 413 Preference: Clean Match!
+107: Morning Clean at 9 o'Clock on Saturday for 1 hours. OLETA 211 Preference: Clean Match!
+108: Brunch Cook at 10 o'Clock on Saturday for 2 hours. DARNELL 313 Preference: Cook Match!
+109: Brunch Cook at 10 o'Clock on Saturday for 2 hours. RHONDA 307 Preference: Cook Match!
+110: Brunch Cook at 10 o'Clock on Saturday for 2 hours. ELIZABETH 113 Preference: Cook Match!
+111: Brunch Clean at 13 o'Clock on Saturday for 2 hours. ODIS 8 Preference: Clean Match!
+112: Brunch Clean at 13 o'Clock on Saturday for 2 hours. CAMELIA 7 Preference: Clean Match!
+113: Brunch Clean at 13 o'Clock on Saturday for 2 hours. JOHNETTE 413 Preference: Clean Match!
+114: Brunch Clean at 13 o'Clock on Saturday for 2 hours. DOROTHY 409 Preference: Clean Match!
+115: Fridge Clean at 21 o'Clock on Saturday for 1 hours. SOLANGE 400 Preference: Clean Match!
+116: Midnight Alice at 22 o'Clock on Saturday for 1 hours. JENNIFER 402 Preference: Clean Match!
+117: Midnight Alice at 22 o'Clock on Saturday for 1 hours. GARRET 518 Preference: Clean Match!
+118: Midnight Alice at 22 o'Clock on Saturday for 1 hours. LAURE 16 Preference: Clean Match!
 
 Match Count is: 127.0
 Match rate is: 0.9548872180451128
 Preferences were weighted at 1000
 
 Students with not enough hours
-INGER: 108 needs 5 hours
-HILMA: 520 needs 5 hours
-MOZELLA: 14 needs 5 hours
-RICARDA: 309 needs 2 hours
-VIRGEN: 511 needs 5 hours
-CARLITA: 207 needs 5 hours
-MADIE: 118 needs 5 hours
-MANUAL: 13 needs 5 hours
-COLUMBUS: 503 needs 5 hours
-SHAWNNA: 414 needs 5 hours
-ARACELI: 204 needs 5 hours
-REBECKA: 317 needs 5 hours
-NGOC: 304 needs 5 hours
-HILTON: 212 needs 1 hours
-ELVIN: 215 needs 3 hours
-LOLA: 108 needs 1 hours
-ROLF: 118 needs 2 hours
-BETH: 19 needs 5 hours
-TRENA: 100 needs 3 hours
-BECKIE: 6 needs 5 hours
-KRYSTAL: 400 needs 1 hours
-GARY: 220 needs 1 hours
-ROSINA: 111 needs 5 hours
-JAIME: 5 needs 5 hours
-LING: 216 needs 5 hours
-JED: 310 needs 1 hours
-ROMONA: 507 needs 5 hours
-LORETA: 515 needs 5 hours
-MAGARET: 216 needs 3 hours
-CARISSA: 402 needs 5 hours
-REGINALD: 312 needs 5 hours
-OLGA: 515 needs 5 hours
-SHARELL: 520 needs 1 hours
-FREDIA: 400 needs 5 hours
-THUY: 4 needs 5 hours
-EARLIE: 506 needs 1 hours
-ETHAN: 504 needs 5 hours
-MARCELENE: 406 needs 2 hours
-VENUS: 14 needs 5 hours
-ANGIE: 102 needs 1 hours
-BRICE: 10 needs 5 hours
-LARITA: 20 needs 5 hours
-ZADA: 304 needs 5 hours
-STACEE: 209 needs 5 hours
-MADELAINE: 8 needs 1 hours
-WAVA: 214 needs 5 hours
-ROCHEL: 409 needs 5 hours
-ZANE: 220 needs 5 hours
-LURLINE: 115 needs 1 hours
-MAGGIE: 218 needs 5 hours
-BRANDE: 102 needs 5 hours
-MARG: 1 needs 5 hours
-ABE: 416 needs 5 hours
-LAURENA: 518 needs 5 hours
-MELANI: 8 needs 5 hours
-BUD: 106 needs 5 hours
-LUBA: 12 needs 5 hours
-CHANDA: 405 needs 1 hours
-ELICIA: 120 needs 1 hours
-ELINORE: 12 needs 1 hours
-ISIS: 503 needs 1 hours
-CLAUDIO: 506 needs 5 hours
-DENVER: 409 needs 1 hours
-MARCUS: 201 needs 5 hours
-FAY: 14 needs 5 hours
-DWANA: 205 needs 5 hours
-TAWNY: 108 needs 5 hours
-BESSIE: 117 needs 5 hours
-VERONIKA: 520 needs 5 hours
-ARDELIA: 409 needs 3 hours
-ASHLYN: 13 needs 5 hours
-LORINE: 211 needs 5 hours
-BETHANN: 413 needs 5 hours
-KIA: 306 needs 5 hours
-GLENNIS: 17 needs 1 hours
-BRIANNE: 116 needs 5 hours
-GEORGENE: 300 needs 1 hours
-KRYSTEN: 317 needs 5 hours
-JACKI: 309 needs 5 hours
-ZOLA: 515 needs 5 hours
-COLLENE: 120 needs 5 hours
-MARQUERITE: 303 needs 5 hours
-NU: 113 needs 5 hours
-MIRIAN: 402 needs 5 hours
-VANETTA: 408 needs 1 hours
-HELENE: 404 needs 4 hours
-LAMONICA: 6 needs 5 hours
-WILLETTE: 2 needs 5 hours
-JOAQUINA: 209 needs 5 hours
-JAQUELINE: 308 needs 5 hours
-MATHILDE: 6 needs 1 hours
-DARELL: 400 needs 5 hours
-NEOMA: 304 needs 5 hours
+SHANTELLE: 411 needs 4 hours
+THERSA: 105 needs 4 hours
+ELLYN: 316 needs 4 hours
+ESPERANZA: 120 needs 4 hours
+VERLA: 207 needs 4 hours
+CANDI: 406 needs 3 hours
+JOSEPH: 501 needs 4 hours
+DEANA: 119 needs 4 hours
+AIDA: 12 needs 4 hours
+LAURAN: 503 needs 3 hours
+ROGELIO: 520 needs 4 hours
+ROSALEE: 301 needs 4 hours
+TEODORA: 502 needs 4 hours
+JODEE: 414 needs 4 hours
+FAYE: 118 needs 4 hours
+JOSEPHINA: 215 needs 4 hours
+LASHON: 17 needs 4 hours
+EVALYN: 207 needs 4 hours
+TAKISHA: 416 needs 2 hours
+SINA: 409 needs 4 hours
+CRAIG: 19 needs 4 hours
+JEFFERY: 214 needs 3 hours
+ANABEL: 400 needs 4 hours
+JIM: 0 needs 4 hours
+EMELDA: 411 needs 4 hours
+TYSON: 13 needs 4 hours
+DEEDEE: 417 needs 4 hours
+DWANA: 317 needs 4 hours
+GENEVIEVE: 5 needs 4 hours
+LIZA: 318 needs 4 hours
+GONZALO: 510 needs 4 hours
+JERROLD: 15 needs 4 hours
+ALVERA: 516 needs 2 hours
+AYESHA: 108 needs 4 hours
+HOLLIE: 115 needs 4 hours

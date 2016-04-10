@@ -13,183 +13,107 @@ public class Laborer
 	public static void main(String[] args) throws IOException
 	{
 		boolean questions = true;
-		int HOURSFLEX = 0;
-		int MAXHOURSFLEX = 0;
-		int NUMBEROFHOURS = 0;
+		int HOURSFLEX = Integer.parseInt(args[0]);
+		int MAXHOURSFLEX = Integer.parseInt(args[2]);
+		int NUMBEROFHOURS = Integer.parseInt(args[1]);
 		FileWriter resultWriter = new FileWriter("ScheduleResults.txt");
-
-		while(questions)
-		{
-			Scanner askUsr = new Scanner(System.in);
-			System.out.println("How many hours of Flex labor needs to be worked?");
-			//This is the total number of Hours you have devoted to Flex Labor
-			HOURSFLEX = askUsr.nextInt();
-			
-			System.out.println("What is the maximum number of Flex hours a Laborer should be assigned?");
-			//This determines how flex is given out
-			MAXHOURSFLEX = askUsr.nextInt();
-			
-			System.out.println("How many hours will each Laborer do in total?");
-			//This is the number of Hours you expect members to do weekly.
-			NUMBEROFHOURS = askUsr.nextInt();
-			
-			if(MAXHOURSFLEX>NUMBEROFHOURS)
-			{
-				System.out.println("The maximum Flex hours per Laborer is higher than the total hours per Laborer, please try again");
-			}
-			else
-			{
-				questions = false;
-			}
-		}
+        FileWriter dataWriter = new FileWriter("ScheduleData.csv");
+		dataWriter.write("#person,name,day,time,length"+"\n");
 		
 		//We need to input files and create the data structure
 		File sf = new File("Schedules");
 		File[] Scheds = sf.listFiles();
-
-		
-		/*
-		for(int i = 0; i < Scheds.length; i++)
-		{
-			System.out.println(Scheds[i].getName());
-		}
-		*/
 		
 		//Create Member Hash
 		Map members = new HashMap<String, Person>();
 		
-		//Begin Loop
 		for(int i = 0; i < Scheds.length; i++)
 		{
-			//Open file
-			//System.out.println("Opening " + (Scheds[i]).getName());
-			Scanner sc = new Scanner(Scheds[i]);
-			sc.useDelimiter(",|\n");
-			//Parse name and Room Number
-			sc.next();
-			String name = new String(sc.next());
-			/*
-			if(name.compareTo("") == 0);
-			{
-				//System.out.println("Somebody didn't write their name at the top");
-				name = Scheds[i].getName();
-			}
-			*/
-			//System.out.println(name);
-			
-			sc.nextLine();
-			sc.next();
-			String room = sc.next();
-			//System.out.println(name + " " + room);
-			
-			sc.nextLine();
-			sc.next();
-			String preference = sc.next();
-			
-			
-			//Begin Loop
-			sc.nextLine();
-			sc.nextLine();
-			//sc.nextLine();
-			
-			Day[] week = new Day[7];
-			for(int q = 0; q < 7; q++)
-			{
-				week[q] = new Day();
-			}
-			try
-			{
-				for(int k = 0; k < 17; k++)
-				{
-					String temp = sc.nextLine();
-					//int j = 0;
-					sc.next();
-					for(int j = 0; j < 7; j++)
-					{
-						//Parse Days and Form Objects
-						//If This and (the next are empty due to commas or end line), we're all good
-						try
-						{	
-							temp = sc.next();
-						}
-						catch(NoSuchElementException e)
-						{
-							temp = "";
-						}
-						if(temp.equals("") || temp.equals("\r"))
-						{
-							(week[j]).setBlock(k,1);
-							//System.out.print(j + ":Free ");
-						}
-						else
-						{
-							(week[j]).setBlock(k,0);
-							//System.out.print(j+ ":" + temp + " ");
-						}
-					}
-					//System.out.println();
-				}
+			if(((Scheds[i].getName()).substring((Scheds[i].getName()).length()-4,(Scheds[i].getName()).length())).equals(".csv"))
+			{	
+				//Open file
+				//System.out.println("Opening " + (Scheds[i]).getName());
+				Scanner sc = new Scanner(Scheds[i]);
+				sc.useDelimiter(",|\n");
+				//Parse name and Room Number
+				sc.next();
+				String name = new String(sc.next());
+				sc.nextLine();
+				sc.next();
+				String room = sc.next();
+				//System.out.println(name + " " + room);
 				
-			}
-			catch(NoSuchElementException e)
-			{
-				System.out.println("Error in input from:");
-				System.out.println(Scheds[i].getName());
-				System.out.println(name);
-				System.exit(1);
-			}
-			catch(Exception e)
-			{
-				System.out.println("Big Error in input from:");
-				System.out.println(Scheds[i].getName());
-				System.out.println(name);
-				System.exit(1);
-			}
-			
-			
-			
-			
-			//System.out.println();
-			//End Loop
-			
-			/*
-			System.out.println();
-			for(int g = 0; g < 17; g++)
-			{
-				for(int e = 0; e < 7; e++)
+				sc.nextLine();
+				sc.next();
+				String preference = sc.next();
+				
+				
+				//Begin Loop
+				sc.nextLine();
+				sc.nextLine();
+				
+				Day[] week = new Day[7];
+				for(int q = 0; q < 7; q++)
 				{
-					System.out.print(week[e].getBlock(g));
+					week[q] = new Day();
 				}
-				System.out.println();
+				try
+				{
+					for(int k = 0; k < 17; k++)
+					{
+						String temp = sc.nextLine();
+						//int j = 0;
+						sc.next();
+						for(int j = 0; j < 7; j++)
+						{
+							//Parse Days and Form Objects
+							//If This and (the next are empty due to commas or end line), we're all good
+							try
+							{	
+								temp = sc.next();
+							}
+							catch(NoSuchElementException e)
+							{
+								temp = "";
+							}
+							if(temp.equals("") || temp.equals("\r"))
+							{
+								(week[j]).setBlock(k,1);
+								//System.out.print(j + ":Free ");
+							}
+							else
+							{
+								(week[j]).setBlock(k,0);
+								//System.out.print(j+ ":" + temp + " ");
+							}
+						}
+						//System.out.println();
+					}
+					
+				}
+				catch(NoSuchElementException e)
+				{
+					LaborerGUI.infoBox("Error in User " + Scheds[i].getName() + "'s Schedule.\nThis is probably a missing name or room number.","Error in User Schedule");		
+					System.exit(1);
+				}
+				catch(Exception e)
+				{
+					LaborerGUI.infoBox("Error in User " + Scheds[i].getName() + "'s Schedule.\nMake sure it is in .csv format.\nThey may need guidance on making a schedule.","Error in User Schedule");	
+					System.exit(1);
+				}
+				//Form Schedule Object
+				Schedule finalSched = 
+					new Schedule(week[0],week[1],week[2],
+								 week[3],week[4],week[5],
+								 week[6]);
+				//Form Person Object
+				Person finalPerson = new Person(name,room,preference,finalSched);
+				//Put it in the Hash
+				members.put((String)(finalPerson.getName() +" "+ finalPerson.getRoom()),finalPerson);
 			}
-			System.out.println();
-			*/
-			
-			//Form Schedule Object
-			Schedule finalSched = 
-				new Schedule(week[0],week[1],week[2],
-							 week[3],week[4],week[5],
-							 week[6]);
-			//Form Person Object
-			Person finalPerson = new Person(name,room,preference,finalSched);
-			//Put it in the Hash
-			//System.out.println("Putting " + finalPerson.getName() + " in the hash");
-			members.put((String)(finalPerson.getName() +" "+ finalPerson.getRoom()),finalPerson);
 		}
-		//End Loop	
-	
-		// Debug
-		
-		/*
-		Iterator<Map.Entry<String, Person>> debugIterator = members.entrySet().iterator() ;
-		while(debugIterator.hasNext()){
-			Map.Entry<String, Person> studentEntry = debugIterator.next();
-			System.out.println(studentEntry.getKey() +" :: "+ studentEntry.getValue());
-		}
-		*/
 			
-	
-	
+			
 		//Then we need to populate the "Sorter" structure
 		File jobs = new File("Jobs/Jobs.csv");		
 		//Parse Jobs
@@ -238,6 +162,7 @@ public class Laborer
 										"Assigned");
 						((Person)members.get(splitter[0])).addJob(temp);
 						resultWriter.write(temp + " " + splitter[0] + "\n");
+						dataWriter.write(jobline + "\n");
 					}
 					
 				}
@@ -245,16 +170,24 @@ public class Laborer
 			catch(Exception e)
 			{
 				//System.out.println(e);
+				/*
 				System.out.println("Something is wrong with your AssignedJobs.csv");
 				System.out.println("Check to make sure the names of People are spelled the same as they are in the schedule");
 				System.out.println("Moving on without it.");
+				*/
+				LaborerGUI.infoBox("Error in AssignedJobs.csv.\nPlease check for correct formatting.\nThe Program will exit for safety.","Error in AssignedJobs.csv");
+				System.exit(1);
 			}
 		}
 		catch(Exception e)
 		{
 			//System.out.println(e.toString());
+			/*
 			System.out.println("No Assigned Jobs File");
 			System.out.println("Moving on without it.");
+			*/
+			LaborerGUI.infoBox("No AssignedJobs.csv was found in the Jobs folder.\nThe Program will move on without it.","No AssignedJobs.csv found");
+				
 		}
 		
 		resultWriter.write("\n");
@@ -295,42 +228,9 @@ public class Laborer
 			lastJob = (Job)jobList.get(i);
 		}
 		//End Loops
-		
-		/* Debug
-		
-		
-		System.out.println("PreSort");
-		for(int i = 0; i < jobList.size(); i++)
-		{
-			System.out.println(jobList.get(i));
-			for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
-			{
-				System.out.print(((Job)jobList.get(i)).getPerson(j).getName() + ((Job)jobList.get(i)).getPerson(j).getRoom() + " ");
-			}
-			System.out.println();
-		}
-		
-		
-		
-		
-		Iterator<Map.Entry<String, Person>> debugIterator = members.entrySet().iterator() ;
-		while(debugIterator.hasNext()){
-			Map.Entry<String, Person> studentEntry = debugIterator.next();
-			System.out.println(studentEntry.getKey() +" :: "+ studentEntry.getValue());
-		}
-		
-		Debug */
 	
 		List<Person> peopleByAvail = new ArrayList<Person>(members.values());
 		Collections.sort(peopleByAvail);
-		
-		/*
-		System.out.println("People by Availability");
-		for(int i = 0; i < peopleByAvail.size(); i++)
-		{
-			System.out.println(peopleByAvail.get(i) + ": " + (peopleByAvail.get(i)).getAvail());
-		}
-		*/
 		
 		if(HOURSFLEX>0)
 		{
@@ -344,6 +244,7 @@ public class Laborer
 				//((Person)(peopleByAvail.get(w))).addHours(4);
 				HOURSFLEX-=4;
 				resultWriter.write(((Person)peopleByAvail.get(w)) + " has " + MAXHOURSFLEX + " hours of Flex Labor\n");
+				dataWriter.write(((Person)peopleByAvail.get(w)) + "," + "FLEX" + ",,," + MAXHOURSFLEX + "\n");
 				w++;
 			}
 			
@@ -359,36 +260,10 @@ public class Laborer
 		
 		resultWriter.write("\n");
 		
-		/*
-		System.out.println("PostSort");
-		for(int i = 0; i < jobList.size(); i++)
-		{
-			System.out.println(jobList.get(i));
-			for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
-			{
-				System.out.println(((Job)jobList.get(i)).getPerson(j).getName() + ((Job)jobList.get(i)).getPerson(j).getRoom());
-			}
-			System.out.println();
-		}
-		*/
-		
 		for(int i = 0; i<jobList.size(); i++)
 		{
 			((Job)jobList.get(i)).sortPeople();
 		}
-		
-		/*Debug
-		System.out.println("PostSort");
-		for(int i = 0; i < jobList.size(); i++)
-		{
-			System.out.println(jobList.get(i));
-			for(int j = 0; j < ((Job)jobList.get(i)).getSize(); j++)
-			{
-				System.out.print(((Job)jobList.get(i)).getPerson(j).getName() + " " + ((Job)jobList.get(i)).getPerson(j).getAvail());
-			}
-			System.out.println();
-		}
-		*/
 		
 		//Then we need to go through the "Sorter" create the "Labor Schedule"
 		
@@ -397,8 +272,6 @@ public class Laborer
 		while(weight>=0)
 		{			
 			boolean SAT = true;
-			FileWriter fw = new FileWriter("ScheduleData.csv");
-			fw.write("#person,name,day,time,length"+"\n");
 			//Go through each job
 			for(int i = 0; i < jobList.size(); i++)
 			{
@@ -426,7 +299,7 @@ public class Laborer
 						{
 							((Job)jobList.get(i)).getPerson(j).addJob(((Job)jobList.get(i)));
 							((Job)jobList.get(i)).setDoer(((Job)jobList.get(i)).getPerson(j));
-							fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
+							//fw.write(((Job)jobList.get(i)).getPerson(j)+","+((Job)jobList.get(i)).getName()+","+((Job)jobList.get(i)).getDay()+","+((Job)jobList.get(i)).getTime()+","+((Job)jobList.get(i)).getLength()+"\n");
 							posfilled = true;
 							break;
 						}
@@ -469,8 +342,8 @@ public class Laborer
 			else
 			{
 				//System.out.println("SAT TRUE ON WEIGHT " + weight);
-				System.out.println("Saving Schedule Data");
-				fw.close();
+				//System.out.println("Saving Schedule Data");
+				//fw.close();
 				finalWeight = weight;
 				weight = -1;
 			}
@@ -489,7 +362,8 @@ public class Laborer
 			}
 			else
 			{
-				resultWriter.write((((Job)jobList.get(i))).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
+				resultWriter.write(((Job)jobList.get(i)).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
+				dataWriter.write(((Job)jobList.get(i)).getDoer() + "," + ((Job)jobList.get(i)).getName() + "," +((Job)jobList.get(i)).getDay() + "," +((Job)jobList.get(i)).getTime() + "," + ((Job)jobList.get(i)).getLength() + "\n"); 
 				if(((Job)jobList.get(i)).getType().equals((((Job)jobList.get(i))).getDoer().getPreference()))
 				{
 					matchCount++;
@@ -522,7 +396,9 @@ public class Laborer
 			}
 		}
 		
-		System.out.println("Saving Final Results");
+		LaborerGUI.infoBox("Program Complete!\nFinal Results are saved in \"Schedule Results.txt\"","Program Complete");
+				
 		resultWriter.close();
+		dataWriter.close();
 	}
 }
