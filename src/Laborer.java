@@ -39,16 +39,14 @@ public class Laborer
 				sc.next();
 				String name = new String(sc.next());
 				sc.nextLine();
+				
 				sc.next();
 				String room = sc.next();
-				//System.out.println(name + " " + room);
-				
 				sc.nextLine();
+				
 				sc.next();
 				String preference = sc.next();
 				
-				
-				//Begin Loop
 				sc.nextLine();
 				sc.nextLine();
 				
@@ -62,7 +60,6 @@ public class Laborer
 					for(int k = 0; k < 17; k++)
 					{
 						String temp = sc.nextLine();
-						//int j = 0;
 						sc.next();
 						for(int j = 0; j < 7; j++)
 						{
@@ -84,10 +81,8 @@ public class Laborer
 							else
 							{
 								(week[j]).setBlock(k,0);
-								//System.out.print(j+ ":" + temp + " ");
 							}
 						}
-						//System.out.println();
 					}
 					
 				}
