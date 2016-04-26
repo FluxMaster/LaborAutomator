@@ -1,144 +1,144 @@
 #person,name,day,time,length
-CLARICE 418,FLEX,,,3
-FORREST 410,FLEX,,,3
-VINCENZO 304,FLEX,,,3
-TOBIAS 409,FLEX,,,3
-ROSETTA 18,FLEX,,,3
-VIOLA 3,FLEX,,,3
-WILLENA 19,FLEX,,,3
-CHELSEY 306,FLEX,,,3
-MARVIN 509,FLEX,,,3
-MELISSIA 408,FLEX,,,3
-MELISSIA 408,Morning Clean,0,3,1
-ELANOR 302,Morning Clean,0,3,1
-KELSEY 208,Dinner Prep,0,8,2
-ERNIE 404,Dinner Prep,0,8,2
-JANETH 215,Dinner Cook,0,10,2
-BUNNY 403,Dinner Cook,0,10,2
-TOBIAS 409,Dishes and Salads,0,11,1
-ESMERALDA 318,Dinner Clean,0,12,2
-LAURE 16,Dinner Clean,0,12,2
-STACIA 303,Dinner Clean,0,12,2
-KECIA 507,Dinner Clean,0,12,2
-DOROTHY 409,Dinner Clean,0,12,2
-KECIA 507,Fridge Clean,0,15,1
-OTIS 320,Midnight Alice,0,16,1
-RASHEEDA 511,Midnight Alice,0,16,1
-OTIS 320,Morning Clean,1,2,1
-ALFONSO 520,Morning Clean,1,2,1
-DARNELL 313,Lunch Cook,1,3,2
-RHONDA 307,Lunch Cook,1,3,2
-HONEY 513,Lunch Cook,1,3,2
-ALONA 111,Pot Scrub,1,6,1
-VIOLA 3,Lunch Clean,1,7,1
-WILLENA 19,Lunch Clean,1,7,1
-JULEE 404,Dinner Prep,1,8,2
-ERNIE 404,Dinner Prep,1,8,2
-RAE 117,Dinner Cook,1,10,2
-SEAN 118,Dinner Cook,1,10,2
-FORREST 410,Dishes and Salads,1,11,1
-DANA 11,Dinner Clean,1,12,2
-LEOLA 501,Dinner Clean,1,12,2
-JENNIFER 402,Dinner Clean,1,12,2
-OLETA 211,Dinner Clean,1,12,2
-CIERRA 305,Dinner Clean,1,12,2
-SHERRIL 415,Fridge Clean,1,15,1
-ALONA 111,Midnight Alice,1,16,1
-NATALIA 316,Midnight Alice,1,16,1
-KECIA 507,Morning Clean,2,2,1
-NATALIA 316,Morning Clean,2,2,1
-ELISABETH 312,Lunch Cook,2,3,2
-DOMINQUE 206,Lunch Cook,2,3,2
-JODY 405,Lunch Cook,2,3,2
-ALFONSO 520,Pot Scrub,2,6,1
-ROGER 313,Lunch Clean,2,7,1
-JEFFERY 214,Lunch Clean,2,7,1
-JERRI 418,Dinner Prep,2,8,2
-SHAN 105,Dinner Prep,2,8,2
-SHAN 105,Dinner Cook,2,10,2
-SHAWANDA 520,Dinner Cook,2,10,2
-MARVIN 509,Dishes and Salads,2,11,1
-MELLISA 304,Dinner Clean,2,12,2
-OTIS 320,Dinner Clean,2,12,2
-TAREN 409,Dinner Clean,2,12,2
-RODGER 115,Dinner Clean,2,12,2
-SEEMA 302,Dinner Clean,2,12,2
-MELLISA 304,Fridge Clean,2,15,1
-SHERRIL 415,Midnight Alice,2,16,1
-LEOLA 501,Midnight Alice,2,16,1
-ROGER 313,Morning Clean,3,2,1
-NATALIA 316,Morning Clean,3,2,1
-GUS 20,Lunch Cook,3,3,2
-BUNNY 403,Lunch Cook,3,3,2
-RAE 117,Lunch Cook,3,3,2
-DANA 11,Pot Scrub,3,6,1
-ELANOR 302,Lunch Clean,3,7,1
-LEOLA 501,Lunch Clean,3,7,1
-HONEY 513,Dinner Prep,3,8,2
-SHAWANDA 520,Dinner Prep,3,8,2
-JULEE 404,Dinner Cook,3,10,2
-CODI 116,Dinner Cook,3,10,2
-CANDI 406,Dishes and Salads,3,11,1
-ELANOR 302,Dinner Clean,3,12,2
-GARRET 518,Dinner Clean,3,12,2
-TAREN 409,Dinner Clean,3,12,2
-RODGER 115,Dinner Clean,3,12,2
-RASHEEDA 511,Dinner Clean,3,12,2
-CHELSEY 306,Fridge Clean,3,15,1
-ROSETTA 18,Midnight Alice,3,16,1
-SHERRIL 415,Midnight Alice,3,16,1
-ROGER 313,Morning Clean,4,2,1
-LAURAN 503,Morning Clean,4,2,1
-CODI 116,Lunch Cook,4,3,2
-CHAD 411,Lunch Cook,4,3,2
-TAKISHA 416,Lunch Cook,4,3,2
-VANESSA 413,Pot Scrub,4,6,1
-RASHEEDA 511,Lunch Clean,4,7,1
-SEEMA 302,Lunch Clean,4,7,1
-KELSEY 208,Dinner Prep,4,8,2
-JANETH 215,Dinner Prep,4,8,2
-DOMINQUE 206,Dinner Cook,4,10,2
-ELIZABETH 113,Dinner Cook,4,10,2
-VINCENZO 304,Dishes and Salads,4,11,1
-CAMELIA 7,Dinner Clean,4,12,2
-STACIA 303,Dinner Clean,4,12,2
-ALFONSO 520,Dinner Clean,4,12,2
-JOHNETTE 413,Dinner Clean,4,12,2
-ALONA 111,Dinner Clean,4,12,2
-ROGER 313,Fridge Clean,4,15,1
-DANA 11,Midnight Alice,4,16,1
-GARRET 518,Midnight Alice,4,16,1
-OLETA 211,Morning Clean,5,2,1
-SEEMA 302,Morning Clean,5,2,1
-JODY 405,Lunch Cook,5,3,2
-ALVERA 516,Lunch Cook,5,3,2
-CHAD 411,Lunch Cook,5,3,2
-SOLANGE 400,Pot Scrub,5,6,1
-JENNIFER 402,Lunch Clean,5,7,1
-LAURE 16,Lunch Clean,5,7,1
-GUS 20,Dinner Prep,5,8,2
-SEAN 118,Dinner Prep,5,8,2
-ELISABETH 312,Dinner Cook,5,10,2
-JERRI 418,Dinner Cook,5,10,2
-CLARICE 418,Dishes and Salads,5,11,1
-ESMERALDA 318,Dinner Clean,5,12,2
-ODIS 8,Dinner Clean,5,12,2
-SOLANGE 400,Dinner Clean,5,12,2
-VANESSA 413,Dinner Clean,5,12,2
-CIERRA 305,Dinner Clean,5,12,2
-NATALIA 316,Fridge Clean,5,15,1
-SHERRIL 415,Midnight Alice,5,16,1
-MELLISA 304,Midnight Alice,5,16,1
-VANESSA 413,Morning Clean,6,3,1
-OLETA 211,Morning Clean,6,3,1
-DARNELL 313,Brunch Cook,6,4,2
-RHONDA 307,Brunch Cook,6,4,2
-ELIZABETH 113,Brunch Cook,6,4,2
-ODIS 8,Brunch Clean,6,7,2
-CAMELIA 7,Brunch Clean,6,7,2
-JOHNETTE 413,Brunch Clean,6,7,2
-DOROTHY 409,Brunch Clean,6,7,2
-SOLANGE 400,Fridge Clean,6,15,1
-JENNIFER 402,Midnight Alice,6,16,1
-GARRET 518,Midnight Alice,6,16,1
-LAURE 16,Midnight Alice,6,16,1
+ALMA 311,FLEX,,,4
+SHAWNTA 513,FLEX,,,4
+ALINE 113,FLEX,,,4
+MARC 406,FLEX,,,4
+MONSERRATE 13,FLEX,,,4
+PAULINE 7,FLEX,,,4
+FRANCISCO 416,FLEX,,,4
+CHANA 415,FLEX,,,4
+LUELLA 400,FLEX,,,4
+SAVANNA 400,FLEX,,,4
+BIRDIE 317,Morning Clean,0,3,1
+CHRISTIA 515,Morning Clean,0,3,1
+CRISTINE 311,Dinner Prep,0,8,2
+GOLDA 120,Dinner Prep,0,8,2
+TAINA 202,Dinner Cook,0,10,2
+TAMICA 307,Dinner Cook,0,10,2
+MYRIAM 304,Dishes and Salads,0,11,1
+SALOME 305,Dinner Clean,0,12,2
+KATHERIN 112,Dinner Clean,0,12,2
+THOMASINE 207,Dinner Clean,0,12,2
+LEA 506,Dinner Clean,0,12,2
+SYREETA 313,Dinner Clean,0,12,2
+MYRIAM 304,Fridge Clean,0,15,1
+AUDRA 219,Midnight Alice,0,16,1
+CHRISTINA 216,Midnight Alice,0,16,1
+MAYE 312,Morning Clean,1,2,1
+RODERICK 12,Morning Clean,1,2,1
+LEEANNA 214,Lunch Cook,1,3,2
+DEON 409,Lunch Cook,1,3,2
+THURMAN 514,Lunch Cook,1,3,2
+RODERICK 12,Pot Scrub,1,6,1
+RODERICK 12,Lunch Clean,1,7,1
+WELDON 403,Lunch Clean,1,7,1
+EMERSON 110,Dinner Prep,1,8,2
+KEESHA 113,Dinner Prep,1,8,2
+LORIS 118,Dinner Cook,1,10,2
+WAYNE 211,Dinner Cook,1,10,2
+AUDRA 219,Dishes and Salads,1,11,1
+AUDRA 219,Dinner Clean,1,12,2
+LEA 506,Dinner Clean,1,12,2
+SYREETA 313,Dinner Clean,1,12,2
+ELEANORE 0,Dinner Clean,1,12,2
+CHANG 202,Dinner Clean,1,12,2
+CHRISTINA 216,Fridge Clean,1,15,1
+MAYE 312,Midnight Alice,1,16,1
+WINONA 503,Midnight Alice,1,16,1
+WILLIS 301,Morning Clean,2,2,1
+GERDA 107,Morning Clean,2,2,1
+EMERSON 110,Lunch Cook,2,3,2
+PANDORA 17,Lunch Cook,2,3,2
+TRESSA 219,Lunch Cook,2,3,2
+SHONA 220,Pot Scrub,2,6,1
+THOMASINE 207,Lunch Clean,2,7,1
+CHANG 202,Lunch Clean,2,7,1
+THURMAN 514,Dinner Prep,2,8,2
+ASLEY 415,Dinner Prep,2,8,2
+MOSES 501,Dinner Cook,2,10,2
+DEON 409,Dinner Cook,2,10,2
+LATANYA 303,Dishes and Salads,2,11,1
+TONEY 319,Dinner Clean,2,12,2
+SALOME 305,Dinner Clean,2,12,2
+CHRISTINA 216,Dinner Clean,2,12,2
+MYRIAM 304,Dinner Clean,2,12,2
+JEREMY 404,Dinner Clean,2,12,2
+ERIN 517,Fridge Clean,2,15,1
+ROBBI 106,Midnight Alice,2,16,1
+CHRISTIA 515,Midnight Alice,2,16,1
+GERDA 107,Morning Clean,3,2,1
+CHRISTIA 515,Morning Clean,3,2,1
+TAINA 202,Lunch Cook,3,3,2
+LATANYA 303,Lunch Cook,3,3,2
+ELLAN 210,Lunch Cook,3,3,2
+WILLIS 301,Pot Scrub,3,6,1
+SHONA 220,Lunch Clean,3,7,1
+ELEANORE 0,Lunch Clean,3,7,1
+LEEANNA 214,Dinner Prep,3,8,2
+LORIS 118,Dinner Prep,3,8,2
+ASLEY 415,Dinner Cook,3,10,2
+DORCAS 302,Dinner Cook,3,10,2
+ROBBI 106,Dishes and Salads,3,11,1
+ERIN 517,Dinner Clean,3,12,2
+WINONA 503,Dinner Clean,3,12,2
+BIRDIE 317,Dinner Clean,3,12,2
+ELEONORE 419,Dinner Clean,3,12,2
+LUCIANA 208,Dinner Clean,3,12,2
+TONEY 319,Fridge Clean,3,15,1
+SHONA 220,Midnight Alice,3,16,1
+CHANG 202,Midnight Alice,3,16,1
+SHANTAY 210,Morning Clean,4,2,1
+WELDON 403,Morning Clean,4,2,1
+MOSES 501,Lunch Cook,4,3,2
+WAYNE 211,Lunch Cook,4,3,2
+DAVE 404,Lunch Cook,4,3,2
+CHRISTIA 515,Pot Scrub,4,6,1
+TIFFANY 400,Lunch Clean,4,7,1
+KRISTOFER 415,Lunch Clean,4,7,1
+CRISTINE 311,Dinner Prep,4,8,2
+LESSIE 308,Dinner Prep,4,8,2
+ALETHA 516,Dinner Cook,4,10,2
+TRESSA 219,Dinner Cook,4,10,2
+WILLIS 301,Dishes and Salads,4,11,1
+MAYE 312,Dinner Clean,4,12,2
+SHANTAY 210,Dinner Clean,4,12,2
+WELDON 403,Dinner Clean,4,12,2
+KRISTOFER 415,Dinner Clean,4,12,2
+MADELAINE 318,Dinner Clean,4,12,2
+ELEONORE 419,Fridge Clean,4,15,1
+WINONA 503,Midnight Alice,4,16,1
+TONEY 319,Midnight Alice,4,16,1
+LUCIANA 208,Morning Clean,5,2,1
+THOMASINE 207,Morning Clean,5,2,1
+RINA 310,Lunch Cook,5,3,2
+ALMETA 402,Lunch Cook,5,3,2
+WHITNEY 207,Lunch Cook,5,3,2
+MATHILDE 215,Pot Scrub,5,6,1
+LUCIANA 208,Lunch Clean,5,7,1
+ASUNCION 513,Lunch Clean,5,7,1
+LESSIE 308,Dinner Prep,5,8,2
+GOLDA 120,Dinner Prep,5,8,2
+ALETHA 516,Dinner Cook,5,10,2
+PANDORA 17,Dinner Cook,5,10,2
+WILLIS 301,Dishes and Salads,5,11,1
+GRAZYNA 511,Dinner Clean,5,12,2
+KATHERIN 112,Dinner Clean,5,12,2
+ASUNCION 513,Dinner Clean,5,12,2
+JEREMY 404,Dinner Clean,5,12,2
+TIFFANY 400,Dinner Clean,5,12,2
+ERIN 517,Fridge Clean,5,15,1
+ELEANORE 0,Midnight Alice,5,16,1
+TIFFANY 400,Midnight Alice,5,16,1
+ELEONORE 419,Morning Clean,6,3,1
+ASUNCION 513,Morning Clean,6,3,1
+KEESHA 113,Brunch Cook,6,4,2
+DORCAS 302,Brunch Cook,6,4,2
+ALMETA 402,Brunch Cook,6,4,2
+GRAZYNA 511,Brunch Clean,6,7,2
+MATHILDE 215,Brunch Clean,6,7,2
+GERDA 107,Brunch Clean,6,7,2
+ROBBI 106,Brunch Clean,6,7,2
+SHANTAY 210,Fridge Clean,6,15,1
+RODERICK 12,Midnight Alice,6,16,1
+MATHILDE 215,Midnight Alice,6,16,1
+BIRDIE 317,Midnight Alice,6,16,1

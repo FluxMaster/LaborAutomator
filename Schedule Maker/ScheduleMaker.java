@@ -6,21 +6,24 @@ import java.util.*;
 
 public class ScheduleMaker extends JFrame
 {
-	private static final int WIDTH = 600;
+	private static final int WIDTH = 800;
 	private static final int HEIGHT = 575;
 	
-	private JLabel nameL,roomL,preferenceL,scheduleL;
+	private JLabel nameL,roomL,preferenceL,scheduleL,com;
 	private JLabel[] week = new JLabel[7];
     private	JLabel[] time = new JLabel[17];
 	
 	private JComboBox prefList;
 	private JTextField nameTF,roomTF;
 	private JTextField[][] sched = new JTextField[7][17];
-	private JButton saveB, loadB;
+	private JButton saveB, loadB, instB;
 	private JFileChooser fc;
+	private JTextArea comments;
+	private JScrollPane csp;
 	
 	private SaveScheduleHandler ssHandler;
 	private LoadScheduleHandler lsHandler;
+	private InstructionButtonHandler ibHandler;
 	
 	public ScheduleMaker()
 	{
@@ -38,6 +41,10 @@ public class ScheduleMaker extends JFrame
 		fc = new JFileChooser();
 		CSVFilter fltr = new CSVFilter();
 		fc.setFileFilter(fltr);
+		
+		comments = new JTextArea(3,200);
+		csp = new JScrollPane(comments);
+		
 		
 		week[0] = new JLabel("Sunday",SwingConstants.CENTER);
 		week[1] = new JLabel("Monday",SwingConstants.CENTER);
@@ -81,17 +88,25 @@ public class ScheduleMaker extends JFrame
 		lsHandler = new LoadScheduleHandler();
 		loadB.addActionListener(lsHandler);
 		
+		instB = new JButton("Instructions");
+		ibHandler = new InstructionButtonHandler();
+		instB.addActionListener(ibHandler);
+		
 		setTitle("Labor Schedule Form");
-		Container pane = getContentPane();
-		GroupLayout layout = new GroupLayout(pane);
-		pane.setLayout(layout);
 		
-		layout.setHorizontalGroup
+		JPanel sPanel = new JPanel();
+		GroupLayout sLayout = new GroupLayout(sPanel);
+		sPanel.setLayout(sLayout);
+		
+		com = new JLabel("Comments");
+		
+		
+		sLayout.setHorizontalGroup
 		(
-			layout.createSequentialGroup()
+			sLayout.createSequentialGroup()
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(nameL)
 						.addComponent(roomL)
 						.addComponent(preferenceL)
@@ -113,11 +128,11 @@ public class ScheduleMaker extends JFrame
 						.addComponent(time[14])
 						.addComponent(time[15])
 						.addComponent(time[16])
-						.addComponent(saveB)
+						.addComponent(com)
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(nameTF)
 						.addComponent(roomTF)
 						.addComponent(prefList)
@@ -139,11 +154,10 @@ public class ScheduleMaker extends JFrame
 						.addComponent(sched[0][14])
 						.addComponent(sched[0][15])
 						.addComponent(sched[0][16])
-						.addComponent(loadB)
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(week[1])
 						.addComponent(sched[1][0])
 						.addComponent(sched[1][1])
@@ -165,7 +179,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(week[2])
 						.addComponent(sched[2][0])
 						.addComponent(sched[2][1])
@@ -187,7 +201,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(week[3])
 						.addComponent(sched[3][0])
 						.addComponent(sched[3][1])
@@ -209,7 +223,8 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
+						.addComponent(saveB)
 						.addComponent(week[4])
 						.addComponent(sched[4][0])
 						.addComponent(sched[4][1])
@@ -231,7 +246,8 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
+						.addComponent(loadB)
 						.addComponent(week[5])
 						.addComponent(sched[5][0])
 						.addComponent(sched[5][1])
@@ -253,7 +269,8 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
+						.addComponent(instB)
 						.addComponent(week[6])
 						.addComponent(sched[6][0])
 						.addComponent(sched[6][1])
@@ -275,30 +292,33 @@ public class ScheduleMaker extends JFrame
 				)
 		);
 		
-		layout.setVerticalGroup
+		sLayout.setVerticalGroup
 		(
-			layout.createSequentialGroup()
+			sLayout.createSequentialGroup()
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(nameL)
 						.addComponent(nameTF)
+						.addComponent(saveB)
+						.addComponent(loadB)
+						.addComponent(instB)
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(roomL)
 						.addComponent(roomTF)
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(preferenceL)
 						.addComponent(prefList)
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(scheduleL)
 						.addComponent(week[0])
 						.addComponent(week[1])
@@ -310,7 +330,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[0])
 						.addComponent(sched[0][0])
 						.addComponent(sched[1][0])
@@ -322,7 +342,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[1])
 						.addComponent(sched[0][1])
 						.addComponent(sched[1][1])
@@ -334,7 +354,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[2])
 						.addComponent(sched[0][2])
 						.addComponent(sched[1][2])
@@ -346,7 +366,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[3])
 						.addComponent(sched[0][3])
 						.addComponent(sched[1][3])
@@ -358,7 +378,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[4])
 						.addComponent(sched[0][4])
 						.addComponent(sched[1][4])
@@ -370,7 +390,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[5])
 						.addComponent(sched[0][5])
 						.addComponent(sched[1][5])
@@ -382,7 +402,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[6])
 						.addComponent(sched[0][6])
 						.addComponent(sched[1][6])
@@ -394,7 +414,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[7])
 						.addComponent(sched[0][7])
 						.addComponent(sched[1][7])
@@ -406,7 +426,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[8])
 						.addComponent(sched[0][8])
 						.addComponent(sched[1][8])
@@ -418,7 +438,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[9])
 						.addComponent(sched[0][9])
 						.addComponent(sched[1][9])
@@ -430,7 +450,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[10])
 						.addComponent(sched[0][10])
 						.addComponent(sched[1][10])
@@ -442,7 +462,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[11])
 						.addComponent(sched[0][11])
 						.addComponent(sched[1][11])
@@ -454,7 +474,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[12])
 						.addComponent(sched[0][12])
 						.addComponent(sched[1][12])
@@ -466,7 +486,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[13])
 						.addComponent(sched[0][13])
 						.addComponent(sched[1][13])
@@ -478,7 +498,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[14])
 						.addComponent(sched[0][14])
 						.addComponent(sched[1][14])
@@ -490,7 +510,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[15])
 						.addComponent(sched[0][15])
 						.addComponent(sched[1][15])
@@ -502,7 +522,7 @@ public class ScheduleMaker extends JFrame
 				)
 				.addGroup
 				(
-					layout.createParallelGroup()
+					sLayout.createParallelGroup()
 						.addComponent(time[16])
 						.addComponent(sched[0][16])
 						.addComponent(sched[1][16])
@@ -512,13 +532,11 @@ public class ScheduleMaker extends JFrame
 						.addComponent(sched[5][16])
 						.addComponent(sched[6][16])
 				)
-				.addGroup
-				(
-					layout.createParallelGroup()
-						.addComponent(saveB)
-						.addComponent(loadB)
-				)
+				.addComponent(com)
 		);
+		
+		add(sPanel, BorderLayout.NORTH);
+		add(csp, BorderLayout.CENTER);
 		
 		setSize(WIDTH, HEIGHT);
 		setVisible(true);
@@ -574,10 +592,11 @@ public class ScheduleMaker extends JFrame
 							for(int j = 0; j<7 ; j++)
 							{
 								fw.write(",");
-								fw.write(sched[j][i-6].getText());
+								fw.write(sched[j][i-6].getText().replace(',',' '));
 							}
 							fw.write("\n");
 						}
+						fw.write(comments.getText());
 						fw.close();
 						JOptionPane.showMessageDialog(null,
 							"Schedule Saved",
@@ -626,9 +645,10 @@ public class ScheduleMaker extends JFrame
 					
 					sc.nextLine();
 					
+					String temp = "";
 					for(int k = 0; k < 17; k++)
 					{
-						String temp = "";
+						
 						sc.nextLine();
 						sc.next();
 						
@@ -648,12 +668,48 @@ public class ScheduleMaker extends JFrame
 							}
 						}
 					}
+					temp = "";
+					while(sc.hasNextLine())
+					{
+						temp+=sc.nextLine();
+					}
+					comments.setText(temp);
 				}
 			}
 			catch(Exception exp)
 			{
 				JOptionPane.showMessageDialog(null,
 							"Error Loading Schedule\n"+exp.toString(),
+							"Error",
+							JOptionPane.ERROR_MESSAGE);
+			}
+		}
+	}
+	
+	private class InstructionButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			try
+			{
+				InputStream in = getClass().getResourceAsStream("/Instructions.txt");
+				Scanner sc = new Scanner(in);
+				String instStr = "";
+				
+				while(sc.hasNextLine())
+				{
+					instStr += sc.nextLine()+"\n";
+				}
+				
+				JOptionPane.showMessageDialog(null,
+								instStr,
+								"Instructions",
+								JOptionPane.PLAIN_MESSAGE);
+			}
+			catch(Exception exp)
+			{
+				JOptionPane.showMessageDialog(null,
+							"Instructions Not Found.",
 							"Error",
 							JOptionPane.ERROR_MESSAGE);
 			}

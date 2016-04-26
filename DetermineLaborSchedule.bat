@@ -1,2 +1,2 @@
 @echo off
-java -cp "src" LaborerGUI
+java -cp "Labor Calculator" MainMenuGUI
