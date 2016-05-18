@@ -107,6 +107,7 @@ public class CalculatorGUI extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			dispose();
+			new MainMenuGUI();
 		}
 	}
 	

@@ -34,7 +34,6 @@ public class Day
 	14	8 P
 	15	9 P
 	16	10 P
-	17	11 P
 	
 	*/
 	
@@ -64,7 +63,7 @@ public class Day
 		time[block] = value;
 	}
 	
-	public static String numberToName(int x)
+	public static String numberToDay(int x)
 	{
 		switch (x)
 		{
@@ -79,4 +78,42 @@ public class Day
 		}
 		return null;
 	}
+	
+	public static int dayToNumber(String x)
+	{
+		if(x.equals("Sunday"))
+			return 0;
+		if(x.equals("Monday"))
+			return 1;
+		if(x.equals("Tuesday"))
+			return 2;
+		if(x.equals("Wednesday"))
+			return 3;
+		if(x.equals("Thursday"))
+			return 4;
+		if(x.equals("Friday"))
+			return 5;
+		if(x.equals("Saturday"))
+			return 6;
+		return -1;
+	}
+	
+	private static String[] timeList = {"6AM","7AM","8AM","9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM","6PM","7PM","8PM","9PM","10PM"};
+
+	
+	public static String numberToTime(int x)
+	{
+		return timeList[x];
+	}	
+	
+	public static int timeToNumber(String time)
+	{
+		for(int i = 0; i < timeList.length; i++)
+		{
+			if(time.equals(timeList[i]))
+				return i;
+		}
+		return -1;
+	}
+	
 }

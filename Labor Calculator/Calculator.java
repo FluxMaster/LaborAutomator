@@ -119,6 +119,7 @@ public class Calculator
 		ArrayList jobList = new ArrayList(0);
 		
 		//Put the jobs in the Job List
+		int errLine = 0;
 		while(jl.hasNext())
 		{
 			String jobline = new String(jl.nextLine());
@@ -127,14 +128,22 @@ public class Calculator
 				String[] splitter = (jobline).split(",");
 				if(!(splitter[0].charAt(0) == '#'))
 				{
-					Job temp = new Job(splitter[0],
-									Integer.parseInt(splitter[1]),
-									Integer.parseInt(splitter[2]),
-									Integer.parseInt(splitter[3]),
-									splitter[4]);
-					jobList.add(temp);
+					try
+					{
+						Job temp = new Job(splitter[0],
+										Integer.parseInt(splitter[1]),
+										Integer.parseInt(splitter[2]),
+										Integer.parseInt(splitter[3]),
+										splitter[4]);
+						jobList.add(temp);
+					}
+					catch(Exception e)
+					{
+						CalculatorGUI.errorBox("Error in AssignedJobs.csv. Please check line" + (errLine + 1) + " for correct formatting.","Error in AssignedJobs.csv");
+					}
 				}
 			}
+			errLine++;
 		}
 		try
 		{
@@ -147,6 +156,8 @@ public class Calculator
 				while(aj.hasNextLine())
 				{
 					String jobline = aj.nextLine();
+					if(jobline.isEmpty())
+						break;
 					String[] splitter = (jobline).split(",");
 					if(!(splitter[0].charAt(0) == '#'))
 					{
@@ -157,9 +168,12 @@ public class Calculator
 										"Assigned");
 						((Person)members.get(splitter[0])).addJob(temp);
 						resultWriter.write(temp + " " + splitter[0] + "\n");
-						dataWriter.write(jobline + "\n");
+						dataWriter.write(splitter[0] +","+ 
+										splitter[1] +","+ 
+										Day.numberToDay(Integer.parseInt(splitter[2])) +","+
+										Day.numberToTime(Integer.parseInt(splitter[3])) +","+
+										Integer.parseInt(splitter[4]) +"\n");
 					}
-					
 				}
 			}
 			catch(Exception e)
@@ -205,7 +219,9 @@ public class Calculator
 				boolean cando = true;
 				for(int j = 0; j < ((Job)jobList.get(i)).getLength(); j++)
 				{
-					if((temp.getSchedule().getDay(((Job)jobList.get(i)).getDay()).getBlock(((Job)jobList.get(i)).getTime()+j))==0)
+					if(((Job)jobList.get(i)).getTime()+j>=17)
+					{}
+					else if((temp.getSchedule().getDay(((Job)jobList.get(i)).getDay()).getBlock(((Job)jobList.get(i)).getTime()+j))==0)
 					{
 						//System.out.println(temp.getName() + " " + temp.getRoom() + " can't do " + (((Job)jobList.get(i)).getName()) + " because of conflict at " + (((Job)jobList.get(i)).getTime()+j));
 						//can't do
@@ -232,12 +248,12 @@ public class Calculator
 			resultWriter.write("Flex Laborers\n");
 			
 			int w = 0;
-			while(HOURSFLEX > 3)
+			while(HOURSFLEX >= MAXHOURSFLEX)
 			{
 				//System.out.println(peopleByAvail.get(w).getName());
 				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, MAXHOURSFLEX,"Flex"));
 				//((Person)(peopleByAvail.get(w))).addHours(4);
-				HOURSFLEX-=4;
+				HOURSFLEX-=MAXHOURSFLEX;
 				resultWriter.write(((Person)peopleByAvail.get(w)) + " has " + MAXHOURSFLEX + " hours of Flex Labor\n");
 				dataWriter.write(((Person)peopleByAvail.get(w)) + "," + "FLEX" + ",,," + MAXHOURSFLEX + "\n");
 				w++;
@@ -358,7 +374,7 @@ public class Calculator
 			else
 			{
 				resultWriter.write(((Job)jobList.get(i)).getDoer() + " Preference: " + (((Job)jobList.get(i))).getDoer().getPreference());
-				dataWriter.write(((Job)jobList.get(i)).getDoer() + "," + ((Job)jobList.get(i)).getName() + "," +((Job)jobList.get(i)).getDay() + "," +((Job)jobList.get(i)).getTime() + "," + ((Job)jobList.get(i)).getLength() + "\n"); 
+				dataWriter.write(((Job)jobList.get(i)).getDoer() + "," + ((Job)jobList.get(i)).getName() + "," + Day.numberToDay(((Job)jobList.get(i)).getDay()) + "," + Day.numberToTime(((Job)jobList.get(i)).getTime()) + "," + ((Job)jobList.get(i)).getLength() + "\n"); 
 				if(((Job)jobList.get(i)).getType().equals((((Job)jobList.get(i))).getDoer().getPreference()))
 				{
 					matchCount++;

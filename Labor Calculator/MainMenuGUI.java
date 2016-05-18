@@ -5,14 +5,15 @@ import java.io.*;
 
 public class MainMenuGUI extends JFrame
 {
-	private static final int WIDTH = 520;
-	private static final int HEIGHT = 80;
+	private static final int WIDTH = 400;
+	private static final int HEIGHT = 175;
 	
-	private JButton calculateB, jobsB, asgnJobsB;
-	private JLabel titleL;
+	private JButton calculateB, jobsB, asgnJobsB, aboutB;
+	private JLabel titleL,subtitleL;
 	private CalculateButtonHandler cbHandler;
 	private JobsButtonHandler jlHandler;
 	private AssignedJobsHandler ajHandler;
+	private AboutButtonHandler abHandler;
 	private DummyButtonHandler dbHandler;
 	
 	public MainMenuGUI()
@@ -26,10 +27,15 @@ public class MainMenuGUI extends JFrame
 		jobsB.addActionListener(jlHandler);
 		
 		asgnJobsB = new JButton("Assigned Jobs List Editor");
-		dbHandler = new DummyButtonHandler();
-		asgnJobsB.addActionListener(dbHandler);
+		AssignedJobsHandler ajHandler = new AssignedJobsHandler();
+		asgnJobsB.addActionListener(ajHandler);
 		
-		titleL = new JLabel("Labor Calculator", SwingConstants.CENTER);
+		aboutB = new JButton("About");
+		abHandler = new AboutButtonHandler();
+		aboutB.addActionListener(abHandler);
+		
+		titleL = new JLabel("C.H.A.R.L.I.E.", SwingConstants.CENTER);
+		subtitleL = new JLabel("College Houses Automated Reliable Labor Inducer Executable",SwingConstants.CENTER);
 		
 		Container pane = getContentPane();
 		GroupLayout layout = new GroupLayout(pane);
@@ -38,27 +44,27 @@ public class MainMenuGUI extends JFrame
 		layout.setHorizontalGroup
 		(
 			layout.createSequentialGroup()
-				.addComponent(calculateB)
 				.addGroup
 				(
 					layout.createParallelGroup()
+						.addComponent(calculateB)
 						.addComponent(titleL)
+						.addComponent(subtitleL)
 						.addComponent(jobsB)
+						.addComponent(asgnJobsB)
+						.addComponent(aboutB)
 				)
-				.addComponent(asgnJobsB)
 		);
 		
 		layout.setVerticalGroup
 		(
 			layout.createSequentialGroup()
 				.addComponent(titleL)
-				.addGroup
-				(
-					layout.createParallelGroup()
-						.addComponent(calculateB)
-						.addComponent(jobsB)
-						.addComponent(asgnJobsB)
-				)
+				.addComponent(subtitleL)
+				.addComponent(calculateB)
+				.addComponent(jobsB)
+				.addComponent(asgnJobsB)
+				.addComponent(aboutB)
 		);
 		
 		setSize(WIDTH,HEIGHT);
@@ -77,7 +83,8 @@ public class MainMenuGUI extends JFrame
 		{
 			try
 			{
-				CalculatorGUI.main(new String[0]);
+				new CalculatorGUI();
+				dispose();
 			}
 			catch(Exception exp)
 			{
@@ -93,7 +100,8 @@ public class MainMenuGUI extends JFrame
 	{
 		public void actionPerformed(ActionEvent e)
 		{
-			JobListGUI JLGUI = new JobListGUI();
+			new JobListGUI();
+			dispose();
 		}
 	}
 	
@@ -101,6 +109,23 @@ public class MainMenuGUI extends JFrame
 	{
 		public void actionPerformed(ActionEvent e)
 		{
+			new AssignedGUI();
+			dispose();
+		}
+	}
+	
+	private class AboutButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			JOptionPane.showMessageDialog(
+						null, 
+						"C.H.A.R.L.I.E. was written during the 2015-2016 school year by Andy Polasek of Taos Cooperative.\n"+
+						"It is named in honor of Charlie Hicks who worked as Labor Czar at Pearl after \"The Anarchy\" and worked as Maintenance Director of College Houses for many years.\n"+ 
+						"This program is gifted to College Houses for use in setting up their houses' labor systems.\n"+
+						"It is provided without warranty, but if you reach out to Andy Polasek or other Labor Czars, they may be able to help with your problems.", 
+						"About", 
+						JOptionPane.PLAIN_MESSAGE);
 		}
 	}
 	
