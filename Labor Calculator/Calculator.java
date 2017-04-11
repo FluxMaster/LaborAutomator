@@ -253,9 +253,11 @@ public class Calculator
 			while(HOURSFLEX >= MAXHOURSFLEX)
 			{
 				//System.out.println(peopleByAvail.get(w).getName());
+				
 				int hoursGiven = MAXHOURSFLEX - ((Person)(peopleByAvail.get(w))).getHours();
-				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, hoursGiven,"Flex"));
-				//((Person)(peopleByAvail.get(w))).addHours(4);
+				if(hoursGiven != 0)
+					((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, hoursGiven,"Flex"));
+				
 				HOURSFLEX-=hoursGiven;
 				if(hoursGiven != 0)
 				{
