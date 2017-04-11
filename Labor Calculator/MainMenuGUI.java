@@ -123,7 +123,7 @@ public class MainMenuGUI extends JFrame
 						"C.H.A.R.L.I.E. was written during the 2015-2016 school year by Andy Polasek of Taos Cooperative.\n"+
 						"It is named in honor of Charlie Hicks who worked as Labor Czar at Pearl after \"The Anarchy\" and worked as Maintenance Director of College Houses for many years.\n"+ 
 						"This program is gifted to College Houses for use in setting up their houses' labor systems.\n"+
-						"It is provided without warranty, but if you reach out to Andy Polasek or other Labor Czars, they may be able to help with your problems.", 
+						"It is provided without warranty, but if you reach out to Andy Polasek at \"andy@polasek.com\" or other Labor Czars, they may be able to help with your problems.", 
 						"About", 
 						JOptionPane.PLAIN_MESSAGE);
 		}

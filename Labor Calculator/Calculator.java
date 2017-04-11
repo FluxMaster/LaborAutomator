@@ -240,9 +240,11 @@ public class Calculator
 		}
 		//End Loops
 	
+		//Sort People List by Availability Score.
 		List<Person> peopleByAvail = new ArrayList<Person>(members.values());
 		Collections.sort(peopleByAvail);
 		
+		//Give out Flex Hours (NEEDS FANCYING)
 		if(HOURSFLEX>0)
 		{
 			resultWriter.write("Flex Laborers\n");
@@ -251,11 +253,15 @@ public class Calculator
 			while(HOURSFLEX >= MAXHOURSFLEX)
 			{
 				//System.out.println(peopleByAvail.get(w).getName());
-				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, MAXHOURSFLEX,"Flex"));
+				int hoursGiven = MAXHOURSFLEX - ((Person)(peopleByAvail.get(w))).getHours();
+				((Person)(peopleByAvail.get(w))).addJob(new Job("Flex Labor", 0, 0, hoursGiven,"Flex"));
 				//((Person)(peopleByAvail.get(w))).addHours(4);
-				HOURSFLEX-=MAXHOURSFLEX;
-				resultWriter.write(((Person)peopleByAvail.get(w)) + " has " + MAXHOURSFLEX + " hours of Flex Labor\n");
-				dataWriter.write(((Person)peopleByAvail.get(w)) + "," + "FLEX" + ",,," + MAXHOURSFLEX + "\n");
+				HOURSFLEX-=hoursGiven;
+				if(hoursGiven != 0)
+				{
+					resultWriter.write(((Person)peopleByAvail.get(w)) + " has " + hoursGiven + " hours of Flex Labor\n");
+					dataWriter.write(((Person)peopleByAvail.get(w)) + "," + "FLEX" + ",,," + hoursGiven + "\n");
+				}
 				w++;
 			}
 			
@@ -407,7 +413,7 @@ public class Calculator
 			}
 		}
 		
-		CalculatorGUI.infoBox("Program Complete!\nFinal Results are saved in \"Schedule Results.txt\"","Program Complete");
+		CalculatorGUI.infoBox("Program Complete!\nFinal Results are saved in \"ScheduleResults.txt\" and in \"ScheduleData.csv\". \nOpen \"ScheduleData.csv\" with a spreadsheet program.","Program Complete");
 				
 		resultWriter.close();
 		dataWriter.close();
